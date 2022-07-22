@@ -1,22 +1,16 @@
-// ignore_for_file: constant_identifier_names
+class ConstanceData {
+  // Constants for Image Assets
+  static const String baseImageUrl = "assets/images/";
+  static const String baseSvgUrl = "assets/svgs/";
 
-const String BaseImageUrl = "assets/images/";
-const String BaseSvgUrl = "assets/svgs/";
+  // images 
+  static const blurryCube = baseImageUrl + "blur_cube.png";
+  static const goldenBar = baseImageUrl + "gold-bar1.png";
+  static const yellowCube = baseImageUrl + "gold-bar2.png";
+  static const purpleSlate = baseImageUrl + "out-purple-slate.png";
+  static const purpleCube = baseImageUrl + "purple-cube.png";
+  static const whiteCube = baseImageUrl + "white-cube.png";
 
-//
-const String purplecube = BaseImageUrl + "purple-cube.png";
-const String whitecube = BaseImageUrl + "white-cube.png";
-const String purpleslate = BaseImageUrl + "out-purple-slate.png";
-const String gradientball = BaseImageUrl + "gradient-ball.png";
-const String blurcube = BaseImageUrl + "blur-cube.png";
-const String goldbar1 = BaseImageUrl + "gold-bar.png";
-//
-const String folioLogo = BaseSvgUrl + "folio-logo.svg";
-// const String folioLogo = BaseSvgUrl + "folio-logo.svg";
-// const String folioLogo = BaseSvgUrl + "folio-logo.svg";
-// const String folioLogo = BaseSvgUrl + "folio-logo.svg";
-// const String folioLogo = BaseSvgUrl + "folio-logo.svg";
-// const String folioLogo = BaseSvgUrl + "folio-logo.svg";
-// const String folioLogo = BaseSvgUrl + "folio-logo.svg";
-// const String folioLogo = BaseSvgUrl + "folio-logo.svg";
-// const String folioLogo = BaseSvgUrl + "folio-logo.svg";
+  // svgs
+  static const appicon = baseSvgUrl + "appicon.svg";
+}
