@@ -1,5 +1,5 @@
-
 import 'package:portfolio/core/exports.dart';
+import 'package:portfolio/modules/home_page.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -24,6 +24,8 @@ class MyApp extends StatelessWidget {
       title: 'Folio',
       theme: CustomTheme.getTheme(context),
       onGenerateRoute: RouteGenerator.generateRoute,
+      initialRoute: RouteGenerator.home,
+      home: const HomePage(),
     );
   }
 }
