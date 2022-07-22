@@ -36,6 +36,7 @@ dependencies:
   flutter_screenutil:
   google_fonts:
   flutter_svg:
+  url_launcher: 
 
 
 dev_dependencies:

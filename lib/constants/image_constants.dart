@@ -3,7 +3,7 @@ class ConstanceData {
   static const String baseImageUrl = "assets/images/";
   static const String baseSvgUrl = "assets/svgs/";
 
-  // images 
+  // images
   static const blurryCube = baseImageUrl + "blur_cube.png";
   static const goldenBar = baseImageUrl + "gold-bar1.png";
   static const yellowCube = baseImageUrl + "gold-bar2.png";
@@ -13,4 +13,6 @@ class ConstanceData {
 
   // svgs
   static const appicon = baseSvgUrl + "appicon.svg";
+  static const dribble = baseSvgUrl + "dribble.svg";
+  static const instagram = baseSvgUrl + "instagram.svg";
 }

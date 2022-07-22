@@ -1,3 +1,4 @@
+import 'package:portfolio/constants/color_constant.dart';
 import 'package:portfolio/core/exports.dart';
 
 class HomePage extends StatefulWidget {
@@ -7,7 +8,8 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomePageState extends State<HomePage>
+    with SingleTickerProviderStateMixin {
   //
   final GlobalKey<ScaffoldState> _globalKey = GlobalKey<ScaffoldState>();
 
@@ -21,17 +23,7 @@ class _HomePageState extends State<HomePage> {
         statusBarColor: Colors.transparent,
       ),
       child: Scaffold(
-        appBar: AppBar(
-          elevation: 0,
-          backgroundColor: theme.backgroundColor,
-          title: Container(
-            padding: const EdgeInsets.only(left: 20),
-            child: SvgPicture.asset(
-              ConstanceData.appicon,
-              fit: BoxFit.scaleDown,
-            ),
-          ),
-        ),
+        backgroundColor: theme.backgroundColor,
         key: _globalKey,
         body: const ResponsiveWidget(
           largeScreen: LargeScreen(),
