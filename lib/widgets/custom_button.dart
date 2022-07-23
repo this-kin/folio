@@ -1,11 +1,11 @@
 import 'package:portfolio/constants/color_constant.dart';
 import 'package:portfolio/core/exports.dart';
 
-class CustomIconBtn extends StatelessWidget {
+class RoundButton extends StatelessWidget {
   final Widget icon;
   final VoidCallback onPressed;
 
-  const CustomIconBtn({
+  const RoundButton({
     Key key,
     this.icon,
     this.onPressed,
@@ -27,12 +27,12 @@ class CustomIconBtn extends StatelessWidget {
   }
 }
 
-class CustomIcon extends StatelessWidget {
+class SocialButton extends StatelessWidget {
   final String icon;
   final VoidCallback onPressed;
   final String title;
 
-  const CustomIcon({
+  const SocialButton({
     Key key,
     this.icon,
     this.onPressed,
@@ -63,7 +63,7 @@ class CustomIcon extends StatelessWidget {
                   fontSize: 17,
                   fontWeight: FontWeight.w600,
                 ),
-              )
+              ),
             ],
           ),
         ),

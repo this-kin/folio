@@ -48,13 +48,13 @@ class _LargeScreenState extends State<LargeScreen>
                       fit: BoxFit.scaleDown,
                     ),
                     const SizedBox(width: 70),
-                    CustomIcon(
+                    SocialButton(
                       icon: ConstanceData.dribble,
                       title: 'Dribble',
                       onPressed: () {},
                     ),
                     const SizedBox(width: 70),
-                    CustomIcon(
+                    SocialButton(
                       icon: ConstanceData.instagram,
                       title: 'Instagram',
                       onPressed: () {},
@@ -66,7 +66,7 @@ class _LargeScreenState extends State<LargeScreen>
                         shape: BoxShape.circle,
                       ),
                       duration: const Duration(milliseconds: 500),
-                      child: CustomIconBtn(
+                      child: RoundButton(
                         onPressed: toggle,
                         icon: AnimatedIcon(
                           icon: AnimatedIcons.menu_close,
