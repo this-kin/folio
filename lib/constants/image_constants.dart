@@ -10,6 +10,7 @@ class ConstanceData {
   static const purpleSlate = baseImageUrl + "out-purple-slate.png";
   static const purpleCube = baseImageUrl + "purple-cube.png";
   static const whiteCube = baseImageUrl + "white-cube.png";
+  static const sheet = baseImageUrl + "sheet.png";
 
   // svgs
   static const appicon = baseSvgUrl + "appicon.svg";

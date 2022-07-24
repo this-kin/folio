@@ -10,6 +10,7 @@ const Color yellowColor = Color(0xffFFD301);
 const Color pinkColor = Color(0xffFFBDBD);
 const Color grayColor = Color(0xff9F9FA9);
 const Color transparency = Colors.transparent;
+const darkBlueColor = Color(0xff1A1D88);
 
 // text colors
 const Color greyTextColor = Color(0xff6B6B6B);

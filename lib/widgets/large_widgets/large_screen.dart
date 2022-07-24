@@ -37,7 +37,7 @@ class _LargeScreenState extends State<LargeScreen>
         children: [
           const BackgroundPattern(),
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 50),
+            padding: const EdgeInsets.symmetric(horizontal: 70),
             child: Column(
               children: [
                 const SizedBox(height: 50),
@@ -51,13 +51,17 @@ class _LargeScreenState extends State<LargeScreen>
                     SocialButton(
                       icon: ConstanceData.dribble,
                       title: 'Dribble',
-                      onPressed: () {},
+                      onPressed: () {
+                        // open dribbble
+                      },
                     ),
                     const SizedBox(width: 70),
                     SocialButton(
                       icon: ConstanceData.instagram,
                       title: 'Instagram',
-                      onPressed: () {},
+                      onPressed: () {
+                        // open instagram
+                      },
                     ),
                     const Spacer(),
                     AnimatedContainer(

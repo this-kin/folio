@@ -1,4 +1,3 @@
-import 'package:portfolio/constants/color_constant.dart';
 import 'package:portfolio/core/exports.dart';
 
 class BackgroundPattern extends StatelessWidget {
@@ -7,18 +6,21 @@ class BackgroundPattern extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    return Row(children: [
-      Expanded(
-        flex: 2,
-        child: Container(
-          color: theme.backgroundColor,
+    return Row(
+      children: [
+        Expanded(
+          flex: 2,
+          child: Container(
+            color: theme.backgroundColor,
+          ),
         ),
-      ),
-      Expanded(
-        child: Container(
-          color: blueColor,
-        ),
-      )
-    ]);
+        Expanded(
+          child: Image.asset(
+            ConstanceData.sheet,
+            fit: BoxFit.cover,
+          ),
+        )
+      ],
+    );
   }
 }
