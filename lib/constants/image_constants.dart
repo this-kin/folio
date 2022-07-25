@@ -1,5 +1,5 @@
 class ConstanceData {
-  // Constants for Image Assets
+  //
   static const String baseImageUrl = "assets/images/";
   static const String baseSvgUrl = "assets/svgs/";
 
@@ -16,4 +16,9 @@ class ConstanceData {
   static const appicon = baseSvgUrl + "appicon.svg";
   static const dribble = baseSvgUrl + "dribble.svg";
   static const instagram = baseSvgUrl + "instagram.svg";
+  static const scroll = baseSvgUrl + "scroll.svg";
+  static const logo = baseSvgUrl + "logo (2).svg";
+  static const phone = baseSvgUrl + "phone.svg";
+  static const message = baseSvgUrl + "message.svg";
+  static const location = baseSvgUrl + "location.svg";
 }

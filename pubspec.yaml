@@ -37,6 +37,7 @@ dependencies:
   google_fonts:
   flutter_svg:
   url_launcher: 
+  get:
 
 
 dev_dependencies:
