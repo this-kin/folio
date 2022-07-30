@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
-
 // app colors
+import 'package:portfolio/core/exports.dart';
+
 const Color blackColor = Color(0xff111029);
 const Color blueColor = Color(0xff00113B);
 const Color backgroundColor = Color(0xffffffff);

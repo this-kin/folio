@@ -7,3 +7,4 @@ export 'package:portfolio/widgets/responsive_widget.dart';
 export 'package:portfolio/modules/small_screen.dart';
 export 'package:flutter_svg/flutter_svg.dart';
 export 'package:portfolio/constants/image_constants.dart';
+export 'package:portfolio/constants/color_constant.dart';

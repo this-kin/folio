@@ -1,5 +1,4 @@
 import 'package:get/get.dart';
-import 'package:portfolio/constants/color_constant.dart';
 import 'package:portfolio/constants/controller.dart';
 import 'package:portfolio/core/exports.dart';
 import 'package:portfolio/widgets/custom_button.dart';
