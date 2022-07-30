@@ -87,13 +87,13 @@ class ScrollButton extends StatelessWidget {
         boxShadow: [
           BoxShadow(
             color: Color.fromRGBO(0, 0, 0, 0.1),
-            blurRadius: 8,
-            spreadRadius: 3,
+            blurRadius: 10,
+            spreadRadius: 1,
           ),
           BoxShadow(
             color: Color.fromRGBO(0, 0, 0, 0.1),
-            blurRadius: 8,
-            spreadRadius: 3,
+            blurRadius: 10,
+            spreadRadius: 1,
           ),
         ],
       ),
@@ -103,7 +103,7 @@ class ScrollButton extends StatelessWidget {
           onTap: onPressed,
           borderRadius: BorderRadius.circular(50),
           child: Padding(
-            padding: const EdgeInsets.all(20),
+            padding: const EdgeInsets.all(30),
             child: SvgPicture.asset(
               ConstanceData.scroll,
               height: 18,
@@ -135,7 +135,6 @@ class CustomTextButton extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         const SizedBox(width: 100),
-        const Spacer(),
         SvgPicture.asset(
           icon,
           fit: BoxFit.scaleDown,
@@ -153,7 +152,6 @@ class CustomTextButton extends StatelessWidget {
             ),
           ),
         ),
-        const Spacer(),
       ],
     );
   }

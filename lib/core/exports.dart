@@ -2,7 +2,7 @@ export 'package:flutter/material.dart';
 export 'package:portfolio/core/routes.dart';
 export 'package:portfolio/core/theme.dart';
 export 'package:flutter/services.dart';
-export 'package:portfolio/widgets/large_widgets/large_screen.dart';
+export 'package:portfolio/modules/large_screen.dart';
 export 'package:portfolio/widgets/responsive_widget.dart';
 export 'package:portfolio/widgets/small_widgets/small_screen.dart';
 export 'package:flutter_svg/flutter_svg.dart';

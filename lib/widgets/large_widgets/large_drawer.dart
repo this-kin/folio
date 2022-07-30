@@ -27,6 +27,7 @@ class _LargeDrawerState extends State<LargeDrawer>
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final height = MediaQuery.of(context).size.height;
     final width = MediaQuery.of(context).size.width;
     return Center(
       child: Drawer(
@@ -34,6 +35,7 @@ class _LargeDrawerState extends State<LargeDrawer>
         elevation: 0,
         width: width,
         child: Container(
+          height: height,
           width: width,
           decoration: const BoxDecoration(
             color: backgroundColor,
@@ -44,17 +46,16 @@ class _LargeDrawerState extends State<LargeDrawer>
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 70),
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     const SizedBox(height: 50),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         SvgPicture.asset(
                           ConstanceData.logo,
                           fit: BoxFit.scaleDown,
                           color: backgroundColor,
                         ),
-                        const Spacer(),
                         Obx(() {
                           return AnimatedContainer(
                             decoration: BoxDecoration(
@@ -80,34 +81,110 @@ class _LargeDrawerState extends State<LargeDrawer>
                               ),
                             ),
                           );
-                        })
+                        }),
                       ],
                     ),
                     const SizedBox(height: 30),
-                    CustomTextButton(
-                      icon: ConstanceData.message,
-                      text: 'hello@ui8.net',
-                      onPressed: () {
-                        // send mail
-                      },
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const Spacer(),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              CustomTextButton(
+                                icon: ConstanceData.message,
+                                text: 'hello@ui8.net',
+                                onPressed: () {
+                                  // send mail
+                                },
+                              ),
+                              const SizedBox(height: 30),
+                              CustomTextButton(
+                                icon: ConstanceData.location,
+                                text:
+                                    '4074 Ebert Summit Suite 375\nLake Leonardchester',
+                                onPressed: () {
+                                  // send mail
+                                },
+                              ),
+                              const SizedBox(height: 30),
+                              CustomTextButton(
+                                icon: ConstanceData.phone,
+                                text: '+44 123 654 7890',
+                                onPressed: () {
+                                  // phone call
+                                },
+                              ),
+                              const SizedBox(height: 250),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(width: 50),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              TextButton(
+                                onPressed: () {
+                                  //
+                                },
+                                child: const Text(
+                                  "About",
+                                  style: TextStyle(
+                                    fontSize: 65,
+                                    fontWeight: FontWeight.bold,
+                                    color: blackColor,
+                                  ),
+                                ),
+                              ),
+                              TextButton(
+                                onPressed: () {
+                                  //
+                                },
+                                child: const Text(
+                                  "Work",
+                                  style: TextStyle(
+                                    fontSize: 65,
+                                    fontWeight: FontWeight.bold,
+                                    color: blackColor,
+                                  ),
+                                ),
+                              ),
+                              TextButton(
+                                onPressed: () {
+                                  //
+                                },
+                                child: const Text(
+                                  "Services",
+                                  style: TextStyle(
+                                    fontSize: 65,
+                                    fontWeight: FontWeight.bold,
+                                    color: blackColor,
+                                  ),
+                                ),
+                              ),
+                              TextButton(
+                                onPressed: () {
+                                  //
+                                },
+                                child: const Text(
+                                  "Contact",
+                                  style: TextStyle(
+                                    fontSize: 65,
+                                    fontWeight: FontWeight.bold,
+                                    color: blackColor,
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(height: 50),
+                            ],
+                          ),
+                        ),
+                      ],
                     ),
-                    const SizedBox(height: 30),
-                    CustomTextButton(
-                      icon: ConstanceData.location,
-                      text: '4074 Ebert Summit Suite 375\nLake Leonardchester',
-                      onPressed: () {
-                        // send mail
-                      },
-                    ),
-                    const SizedBox(height: 30),
-                    CustomTextButton(
-                      icon: ConstanceData.phone,
-                      text: '+44 123 654 7890',
-                      onPressed: () {
-                        // phone call
-                      },
-                    ),
-                    const SizedBox(height: 250),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
