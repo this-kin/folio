@@ -57,10 +57,9 @@ class SocialButton extends StatelessWidget {
               const SizedBox(width: 12),
               Text(
                 title,
-                style: const TextStyle(
-                  color: grayColor,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w600,
+                style: CustomTheme.mediumText(context).copyWith(
+                  color: const Color(0xff9F9FA9),
+                  fontWeight: FontWeight.w700,
                 ),
               ),
             ],

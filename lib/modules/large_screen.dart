@@ -6,6 +6,7 @@ import 'package:portfolio/widgets/custom_button.dart';
 import 'package:portfolio/widgets/large_widgets/first_widget.dart';
 import 'package:portfolio/widgets/large_widgets/large_background.dart';
 import 'package:portfolio/widgets/large_widgets/large_drawer.dart';
+import 'package:portfolio/widgets/large_widgets/second_widget.dart';
 
 class LargeScreen extends StatefulWidget {
   const LargeScreen({Key key}) : super(key: key);
@@ -43,36 +44,17 @@ class _LargeScreenState extends State<LargeScreen>
               children: [
                 const BackgroundPattern(),
                 Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 70),
+                  padding: const EdgeInsets.symmetric(horizontal: 90),
                   child: ScrollConfiguration(
                     behavior: ScrollConfiguration.of(context)
                         .copyWith(scrollbars: false),
                     child: SingleChildScrollView(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          const FirstWidget(),
-                          const SizedBox(height: 320),
-                          Row(
-                            children: [
-                              Container(
-                                height: 2,
-                                width: 70,
-                                decoration:
-                                    const BoxDecoration(color: purpleColor),
-                              ),
-                              const SizedBox(width: 20),
-                              const Text(
-                                "What I Do",
-                                style: TextStyle(
-                                  color: purpleColor,
-                                  fontSize: 17,
-                                  fontWeight: FontWeight.w900,
-                                ),
-                              )
-                            ],
-                          ),
-                          const SizedBox(height: 500),
+                        children: const [
+                          FirstWidget(),
+                          SecondWidget(),
+                          SizedBox(height: 500),
                         ],
                       ),
                     ),

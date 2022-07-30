@@ -4,6 +4,6 @@ export 'package:portfolio/core/theme.dart';
 export 'package:flutter/services.dart';
 export 'package:portfolio/modules/large_screen.dart';
 export 'package:portfolio/widgets/responsive_widget.dart';
-export 'package:portfolio/widgets/small_widgets/small_screen.dart';
+export 'package:portfolio/modules/small_screen.dart';
 export 'package:flutter_svg/flutter_svg.dart';
 export 'package:portfolio/constants/image_constants.dart';

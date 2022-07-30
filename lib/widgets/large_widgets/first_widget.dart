@@ -36,7 +36,7 @@ class _FirstWidgetState extends State<FirstWidget>
               ConstanceData.appicon,
               fit: BoxFit.scaleDown,
             ),
-            const SizedBox(width: 80),
+            const SizedBox(width: 50),
             SocialButton(
               icon: ConstanceData.dribble,
               title: 'Dribble',
@@ -89,9 +89,13 @@ class _FirstWidgetState extends State<FirstWidget>
               decoration: const BoxDecoration(color: purpleColor),
             ),
             const SizedBox(width: 20),
-             Text(
+            Text(
               "Jack Gross",
-              style: CustomTheme.normalText(context)
+              style: CustomTheme.mediumText(context).copyWith(
+                color: purpleColor,
+                fontSize: 17,
+                fontWeight: FontWeight.w900,
+              ),
             )
           ],
         ),
@@ -111,13 +115,9 @@ class _FirstWidgetState extends State<FirstWidget>
                 },
               ),
               const SizedBox(width: 50),
-              const Text(
+              Text(
                 "Scroll Down",
-                style: TextStyle(
-                  color: blackColor,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                ),
+                style: CustomTheme.mediumText(context),
               ),
             ],
           ),
