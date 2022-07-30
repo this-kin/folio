@@ -89,25 +89,16 @@ class _FirstWidgetState extends State<FirstWidget>
               decoration: const BoxDecoration(color: purpleColor),
             ),
             const SizedBox(width: 20),
-            const Text(
+             Text(
               "Jack Gross",
-              style: TextStyle(
-                color: purpleColor,
-                fontSize: 17,
-                fontWeight: FontWeight.w900,
-              ),
+              style: CustomTheme.normalText(context)
             )
           ],
         ),
         const SizedBox(height: 50),
-        const Text(
+        Text(
           "Hello, my\nname's Jack.\nI'm a Visual\nDesigner.",
-          style: TextStyle(
-            color: blackColor,
-            height: 0,
-            fontSize: 65,
-            fontWeight: FontWeight.bold,
-          ),
+          style: CustomTheme.largeText(context),
         ),
         const SizedBox(height: 210),
         Padding(

@@ -6,57 +6,57 @@ class CustomTheme {
   //
   static ThemeData getTheme(BuildContext context) => _themeData(context);
 
-   static TextStyle largeText(BuildContext context) {
-    return Theme.of(context).textTheme.headline1!.copyWith(
-          fontSize: 25.0,
-          fontWeight: FontWeight.w700,
+  static TextStyle largeText(BuildContext context) {
+    return Theme.of(context).textTheme.headline1.copyWith(
+          fontSize: 65.0,
+          fontWeight: FontWeight.bold,
           color: blackColor,
-          fontFamily: ,
+          fontFamily: GoogleFonts.poppins().fontFamily,
         );
   }
 
   static TextStyle semiLargeText(BuildContext context) {
-    return Theme.of(context).textTheme.headline1!.copyWith(
-          fontSize: 20.0.sp,
+    return Theme.of(context).textTheme.headline1.copyWith(
+          fontSize: 20.0,
           fontWeight: FontWeight.w700,
           color: blackColor,
-          fontFamily: 'SFNSDisplay',
+          fontFamily: GoogleFonts.poppins().fontFamily,
         );
   }
 
   static TextStyle mediumText(BuildContext context) {
-    return Theme.of(context).textTheme.headline6!.copyWith(
-          fontSize: 16.0.sp,
+    return Theme.of(context).textTheme.headline6.copyWith(
+          fontSize: 16.0,
           fontWeight: FontWeight.w700,
           color: blackColor,
-          fontFamily: 'SFNSDisplay',
+          fontFamily: GoogleFonts.poppins().fontFamily,
         );
   }
 
   static TextStyle normalText(BuildContext context) {
-    return Theme.of(context).textTheme.headline1!.copyWith(
-          fontSize: 14.0.sp,
+    return Theme.of(context).textTheme.headline1.copyWith(
+          fontSize: 14.0,
           fontWeight: FontWeight.w500,
           color: blackColor,
-          fontFamily: 'SFNSDisplay',
+          fontFamily: GoogleFonts.poppins().fontFamily,
         );
   }
 
   static TextStyle smallText(BuildContext context) {
-    return Theme.of(context).textTheme.headline1!.copyWith(
-          fontSize: 12.0.sp,
+    return Theme.of(context).textTheme.headline1.copyWith(
+          fontSize: 12.0,
           fontWeight: FontWeight.w300,
           color: blackColor,
-          fontFamily: 'SFNSDisplay',
+          fontFamily: GoogleFonts.poppins().fontFamily,
         );
   }
 
   static TextStyle smallestText(BuildContext context) {
-    return Theme.of(context).textTheme.headline1!.copyWith(
-          fontSize: 10.0.sp,
+    return Theme.of(context).textTheme.headline1.copyWith(
+          fontSize: 10.0,
           fontWeight: FontWeight.w300,
           color: blackColor,
-          fontFamily: 'SFNSDisplay',
+          fontFamily: GoogleFonts.poppins().fontFamily,
         );
   }
 
