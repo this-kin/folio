@@ -1,4 +1,3 @@
-
 import 'package:portfolio/core/exports.dart';
 
 class Specialization {
@@ -18,7 +17,7 @@ class Specialization {
 final Specialization specialization1 = Specialization(
   image: ConstanceData.cursor,
   title: "User Interface",
-  color: pinkColor,
+  color: yellowColor,
   description:
       "We have got quite a few\n already made templates for\nbetter project management\nthat you can use now.",
 );
@@ -31,8 +30,8 @@ final Specialization specialization2 = Specialization(
       "We have got quite a few\n already made templates for\nbetter project management\nthat you can use now.",
 );
 final Specialization specialization3 = Specialization(
-  image: ConstanceData.cursor,
-  color: yellowColor,
+  image: ConstanceData.color_picker,
+  color: pinkColor,
   title: "UI Design Kit",
   description:
       "We have got quite a few\n already made templates for\nbetter project management\nthat you can use now.",

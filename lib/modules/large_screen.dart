@@ -7,6 +7,7 @@ import 'package:portfolio/widgets/large_widgets/first_widget.dart';
 import 'package:portfolio/widgets/large_widgets/large_background.dart';
 import 'package:portfolio/widgets/large_widgets/large_drawer.dart';
 import 'package:portfolio/widgets/large_widgets/second_widget.dart';
+import 'package:portfolio/widgets/large_widgets/third_widget.dart';
 
 class LargeScreen extends StatefulWidget {
   const LargeScreen({Key key}) : super(key: key);
@@ -54,7 +55,7 @@ class _LargeScreenState extends State<LargeScreen>
                         children: const [
                           FirstWidget(),
                           SecondWidget(),
-                          SizedBox(height: 500),
+                          ThirdWidget(),
                         ],
                       ),
                     ),
