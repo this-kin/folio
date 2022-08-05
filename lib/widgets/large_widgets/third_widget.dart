@@ -90,8 +90,26 @@ class ThirdWidget extends StatelessWidget {
             },
           ),
         ),
-        SizedBox(
-          height: 500,
+        const SizedBox(height: 50),
+        Row(
+          children: [
+            IconButton(
+              onPressed: () {
+                // backward
+              },
+              icon: Icon(
+                Icons.arrow_back_sharp,
+              ),
+            ),
+            IconButton(
+              onPressed: () {
+                // backward
+              },
+              icon: Icon(
+                Icons.arrow_back_sharp,
+              ),
+            )
+          ],
         )
       ],
     );

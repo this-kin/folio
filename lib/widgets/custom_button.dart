@@ -51,8 +51,8 @@ class SocialButton extends StatelessWidget {
             children: [
               SvgPicture.asset(
                 icon,
-                height: 17,
-                width: 17,
+                height: 20,
+                width: 20,
               ),
               const SizedBox(width: 12),
               Text(
@@ -153,5 +153,19 @@ class CustomTextButton extends StatelessWidget {
         ),
       ],
     );
+  }
+}
+
+class CustomAnimatedButton extends StatefulWidget {
+  const CustomAnimatedButton({Key key}) : super(key: key);
+
+  @override
+  State<CustomAnimatedButton> createState() => _CustomAnimatedButtonState();
+}
+
+class _CustomAnimatedButtonState extends State<CustomAnimatedButton> {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
   }
 }
