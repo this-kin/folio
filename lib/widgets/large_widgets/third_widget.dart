@@ -33,13 +33,13 @@ class ThirdWidget extends StatelessWidget {
                       boxShadow: const [
                         BoxShadow(
                           color: transparency,
-                          blurRadius: 50,
+                          blurRadius: 0,
                           offset: Offset(0, 0),
                         ),
                         BoxShadow(
                           color: Color.fromRGBO(0, 0, 0, 0.1),
-                          blurRadius: 40,
-                          spreadRadius: 6,
+                          blurRadius: 30,
+                          spreadRadius: 3,
                           offset: Offset(1, 3),
                         ),
                       ],
