@@ -2,6 +2,7 @@ import 'package:get/get.dart';
 import 'package:portfolio/constants/controller.dart';
 import 'package:portfolio/core/exports.dart';
 import 'package:portfolio/widgets/large_widgets/first_widget.dart';
+import 'package:portfolio/widgets/large_widgets/fourth_widget.dart';
 import 'package:portfolio/widgets/large_widgets/large_background.dart';
 import 'package:portfolio/widgets/large_widgets/large_drawer.dart';
 import 'package:portfolio/widgets/large_widgets/second_widget.dart';
@@ -14,18 +15,7 @@ class LargeScreen extends StatefulWidget {
   State<LargeScreen> createState() => _LargeScreenState();
 }
 
-class _LargeScreenState extends State<LargeScreen>
-    with SingleTickerProviderStateMixin {
-  //
-  AnimationController _controller;
-
-  @override
-  void initState() {
-    super.initState();
-    _controller = AnimationController(
-        vsync: this, duration: const Duration(milliseconds: 500));
-  }
-
+class _LargeScreenState extends State<LargeScreen> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
@@ -37,25 +27,25 @@ class _LargeScreenState extends State<LargeScreen>
       ),
       child: Obx(
         () => Scaffold(
+            backgroundColor: theme.backgroundColor,
             key: appController.globalKey.value,
             drawer: const LargeDrawer(),
             body: Stack(
               children: [
                 const BackgroundPattern(),
-                Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 90),
-                  child: ScrollConfiguration(
-                    behavior: ScrollConfiguration.of(context)
-                        .copyWith(scrollbars: false),
-                    child: SingleChildScrollView(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const [
-                          FirstWidget(),
-                          SecondWidget(),
-                          ThirdWidget(),
-                        ],
-                      ),
+                ScrollConfiguration(
+                  behavior: ScrollConfiguration.of(context)
+                      .copyWith(scrollbars: false),
+                  child: SingleChildScrollView(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: const [
+                        FirstWidget(),
+                        SecondWidget(),
+                        ThirdWidget(),
+                        FourthWidget(),
+                        SizedBox(height: 100),
+                      ],
                     ),
                   ),
                 )

@@ -25,103 +25,106 @@ class _FirstWidgetState extends State<FirstWidget>
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        const SizedBox(height: 50),
-        Row(
-          children: [
-            SvgPicture.asset(
-              ConstanceData.appicon,
-              fit: BoxFit.scaleDown,
-            ),
-            const SizedBox(width: 50),
-            SocialButton(
-              icon: ConstanceData.dribble,
-              title: 'Dribble',
-              onPressed: () {
-                // open dribbble
-              },
-            ),
-            const SizedBox(width: 70),
-            SocialButton(
-              icon: ConstanceData.instagram,
-              title: 'Instagram',
-              onPressed: () {
-                // open instagram
-              },
-            ),
-            const Spacer(),
-            Obx(() {
-              return AnimatedContainer(
-                decoration: BoxDecoration(
-                  color:
-                      appController.isOpen.value ? purpleColor : transparency,
-                  shape: BoxShape.circle,
-                ),
-                duration: const Duration(milliseconds: 500),
-                child: RoundButton(
-                  onPressed: () {
-                    if (!appController.isOpen.value) {
-                      appController.openDrawer();
-                      _controller.forward();
-                    }
-                    appController.openDrawer();
-                    _controller.forward();
-                  },
-                  icon: AnimatedIcon(
-                    icon: AnimatedIcons.menu_close,
-                    color: theme.backgroundColor,
-                    progress: _controller,
-                  ),
-                ),
-              );
-            })
-          ],
-        ),
-        const SizedBox(height: 170),
-        Row(
-          children: [
-            Container(
-              height: 2,
-              width: 70,
-              decoration: const BoxDecoration(color: purpleColor),
-            ),
-            const SizedBox(width: 20),
-            Text(
-              "Jack Gross",
-              style: CustomTheme.mediumText(context).copyWith(
-                color: purpleColor,
-                fontSize: 17,
-                fontWeight: FontWeight.w900,
-              ),
-            )
-          ],
-        ),
-        const SizedBox(height: 50),
-        Text(
-          "Hello, my\nname's Jack.\nI'm a Visual\nDesigner.",
-          style: CustomTheme.largeText(context),
-        ),
-        const SizedBox(height: 210),
-        Padding(
-          padding: const EdgeInsets.only(left: 5),
-          child: Row(
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 90),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const SizedBox(height: 50),
+          Row(
             children: [
-              ScrollButton(
-                onPressed: () {
-                  // scroll down
-                },
+              SvgPicture.asset(
+                ConstanceData.appicon,
+                fit: BoxFit.scaleDown,
               ),
               const SizedBox(width: 50),
-              Text(
-                "Scroll Down",
-                style: CustomTheme.mediumText(context),
+              SocialButton(
+                icon: ConstanceData.dribble,
+                title: 'Dribble',
+                onPressed: () {
+                  // open dribbble
+                },
               ),
+              const SizedBox(width: 70),
+              SocialButton(
+                icon: ConstanceData.instagram,
+                title: 'Instagram',
+                onPressed: () {
+                  // open instagram
+                },
+              ),
+              const Spacer(),
+              Obx(() {
+                return AnimatedContainer(
+                  decoration: BoxDecoration(
+                    color:
+                        appController.isOpen.value ? purpleColor : transparency,
+                    shape: BoxShape.circle,
+                  ),
+                  duration: const Duration(milliseconds: 500),
+                  child: RoundButton(
+                    onPressed: () {
+                      if (!appController.isOpen.value) {
+                        appController.openDrawer();
+                        _controller.forward();
+                      }
+                      appController.openDrawer();
+                      _controller.forward();
+                    },
+                    icon: AnimatedIcon(
+                      icon: AnimatedIcons.menu_close,
+                      color: theme.backgroundColor,
+                      progress: _controller,
+                    ),
+                  ),
+                );
+              })
             ],
           ),
-        ),
-      ],
+          const SizedBox(height: 170),
+          Row(
+            children: [
+              Container(
+                height: 2,
+                width: 70,
+                decoration: const BoxDecoration(color: purpleColor),
+              ),
+              const SizedBox(width: 20),
+              Text(
+                "Jack Gross",
+                style: CustomTheme.mediumText(context).copyWith(
+                  color: purpleColor,
+                  fontSize: 17,
+                  fontWeight: FontWeight.w900,
+                ),
+              )
+            ],
+          ),
+          const SizedBox(height: 50),
+          Text(
+            "Hello, my\nname's Jack.\nI'm a Visual\nDesigner.",
+            style: CustomTheme.largeText(context),
+          ),
+          const SizedBox(height: 210),
+          Padding(
+            padding: const EdgeInsets.only(left: 5),
+            child: Row(
+              children: [
+                ScrollButton(
+                  onPressed: () {
+                    // scroll down
+                  },
+                ),
+                const SizedBox(width: 50),
+                Text(
+                  "Scroll Down",
+                  style: CustomTheme.mediumText(context),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
