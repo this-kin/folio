@@ -1,5 +1,6 @@
 import 'package:portfolio/constants/string_constant.dart';
 import 'package:portfolio/core/exports.dart';
+import 'package:portfolio/widgets/custom_button.dart';
 
 class ThirdWidget extends StatelessWidget {
   const ThirdWidget({Key key}) : super(key: key);
@@ -10,7 +11,7 @@ class ThirdWidget extends StatelessWidget {
       children: [
         const SizedBox(height: 200),
         SizedBox(
-          height: 720,
+          height: 740,
           width: MediaQuery.of(context).size.width,
           child: ListView.builder(
             shrinkWrap: true,
@@ -19,12 +20,25 @@ class ThirdWidget extends StatelessWidget {
             itemBuilder: (context, index) {
               final snapshot = specializations[index];
               return Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 30),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
                 child: Container(
                   width: MediaQuery.of(context).size.width / 4,
                   decoration: BoxDecoration(
                     color: backgroundColor,
-                    borderRadius: BorderRadius.circular(20),
+                    borderRadius: BorderRadius.circular(40),
+                    boxShadow: const [
+                      BoxShadow(
+                        color: Color.fromRGBO(0, 0, 0, 0.01),
+                        blurRadius: 10,
+                        offset: Offset(1, 3),
+                      ),
+                      BoxShadow(
+                        color: Color.fromRGBO(0, 0, 0, 0.1),
+                        blurRadius: 10,
+                        offset: Offset(1, 5),
+                      ),
+                    ],
                   ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -55,7 +69,7 @@ class ThirdWidget extends StatelessWidget {
                           fontSize: 25,
                         ),
                       ),
-                      const SizedBox(height: 40),
+                      const SizedBox(height: 30),
                       Text(
                         snapshot.description,
                         textAlign: TextAlign.center,
@@ -64,7 +78,7 @@ class ThirdWidget extends StatelessWidget {
                           fontWeight: FontWeight.w500,
                         ),
                       ),
-                      const SizedBox(height: 60),
+                      const SizedBox(height: 50),
                       Container(
                         decoration: BoxDecoration(
                           color: blueColor,
@@ -89,10 +103,44 @@ class ThirdWidget extends StatelessWidget {
             },
           ),
         ),
-        const SizedBox(height: 50),
+        const SizedBox(height: 100),
         Row(
-          children: [],
-        )
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            const SizedBox(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                NavigatorButton(
+                  icon: ConstanceData.arrow_back,
+                  onPressed: () {
+                    // go back
+                  },
+                ),
+                const SizedBox(width: 20),
+                NavigatorButton(
+                  icon: ConstanceData.arrow_front,
+                  onPressed: () {
+                    // go front
+                  },
+                ),
+              ],
+            ),
+            TextButton(
+              onPressed: () {
+                // contact me
+              },
+              child: Text(
+                "Contact me",
+                style: CustomTheme.semiLargeText(context).copyWith(
+                  color: purpleColor,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+            )
+          ],
+        ),
+        const SizedBox(height: 100),
       ],
     );
   }

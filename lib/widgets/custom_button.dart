@@ -168,3 +168,32 @@ class _CustomAnimatedButtonState extends State<CustomAnimatedButton> {
     return Container();
   }
 }
+
+class NavigatorButton extends StatelessWidget {
+  final String icon;
+  final VoidCallback onPressed;
+
+  const NavigatorButton({
+    Key key,
+    this.icon,
+    this.onPressed,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      type: MaterialType.transparency,
+      child: InkWell(
+        onTap: onPressed,
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: SvgPicture.asset(
+            icon,
+            width: 40,
+            color: darkGreyColor,
+          ),
+        ),
+      ),
+    );
+  }
+}
