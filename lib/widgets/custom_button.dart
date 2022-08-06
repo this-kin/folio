@@ -84,29 +84,27 @@ class ScrollButton extends StatelessWidget {
         shape: BoxShape.circle,
         boxShadow: [
           BoxShadow(
-            color: Color.fromRGBO(0, 0, 0, 0.1),
-            blurRadius: 10,
-            spreadRadius: 1,
+            color: transparency,
+            blurRadius: 20,
+            offset: Offset(0, 0),
           ),
           BoxShadow(
             color: Color.fromRGBO(0, 0, 0, 0.1),
-            blurRadius: 10,
-            spreadRadius: 1,
+            blurRadius: 20,
+            spreadRadius: 3,
+            offset: Offset(1, 3),
           ),
         ],
       ),
-      child: Material(
-        type: MaterialType.transparency,
-        child: InkWell(
-          onTap: onPressed,
-          borderRadius: BorderRadius.circular(50),
-          child: Padding(
-            padding: const EdgeInsets.all(30),
-            child: SvgPicture.asset(
-              ConstanceData.scroll,
-              height: 18,
-              width: 18,
-            ),
+      child: InkWell(
+        onTap: onPressed,
+        borderRadius: BorderRadius.circular(50),
+        child: Padding(
+          padding: const EdgeInsets.all(25),
+          child: SvgPicture.asset(
+            ConstanceData.scroll,
+            height: 18,
+            width: 18,
           ),
         ),
       ),

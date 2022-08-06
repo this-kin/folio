@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
 import 'package:portfolio/constants/controller.dart';
 import 'package:portfolio/core/exports.dart';
+import 'package:portfolio/widgets/large_widgets/fifth_widget.dart';
 import 'package:portfolio/widgets/large_widgets/first_widget.dart';
 import 'package:portfolio/widgets/large_widgets/fourth_widget.dart';
 import 'package:portfolio/widgets/large_widgets/large_background.dart';
@@ -27,30 +28,31 @@ class _LargeScreenState extends State<LargeScreen> {
       ),
       child: Obx(
         () => Scaffold(
-            backgroundColor: theme.backgroundColor,
-            key: appController.globalKey.value,
-            drawer: const LargeDrawer(),
-            body: Stack(
-              children: [
-                const BackgroundPattern(),
-                ScrollConfiguration(
-                  behavior: ScrollConfiguration.of(context)
-                      .copyWith(scrollbars: false),
-                  child: SingleChildScrollView(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: const [
-                        FirstWidget(),
-                        SecondWidget(),
-                        ThirdWidget(),
-                        FourthWidget(),
-                        SizedBox(height: 100),
-                      ],
-                    ),
+          backgroundColor: theme.backgroundColor,
+          key: appController.globalKey.value,
+          drawer: const LargeDrawer(),
+          body: Stack(
+            children: [
+              const BackgroundPattern(),
+              ScrollConfiguration(
+                behavior:
+                    ScrollConfiguration.of(context).copyWith(scrollbars: false),
+                child: SingleChildScrollView(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: const [
+                      FirstWidget(),
+                      SecondWidget(),
+                      ThirdWidget(),
+                      FourthWidget(),
+                      FifthWidget(),
+                    ],
                   ),
-                )
-              ],
-            )),
+                ),
+              )
+            ],
+          ),
+        ),
       ),
     );
   }
