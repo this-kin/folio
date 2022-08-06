@@ -1,8 +1,6 @@
 import 'package:get/get.dart';
-import 'package:portfolio/constants/color_constant.dart';
 import 'package:portfolio/constants/controller.dart';
 import 'package:portfolio/core/exports.dart';
-import 'package:portfolio/widgets/custom_button.dart';
 import 'package:portfolio/widgets/large_widgets/first_widget.dart';
 import 'package:portfolio/widgets/large_widgets/large_background.dart';
 import 'package:portfolio/widgets/large_widgets/large_drawer.dart';

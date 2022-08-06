@@ -1,6 +1,5 @@
 import 'package:portfolio/constants/string_constant.dart';
 import 'package:portfolio/core/exports.dart';
-import 'package:portfolio/widgets/hover_button.dart';
 
 class ThirdWidget extends StatelessWidget {
   const ThirdWidget({Key key}) : super(key: key);
@@ -92,24 +91,7 @@ class ThirdWidget extends StatelessWidget {
         ),
         const SizedBox(height: 50),
         Row(
-          children: [
-            IconButton(
-              onPressed: () {
-                // backward
-              },
-              icon: Icon(
-                Icons.arrow_back_sharp,
-              ),
-            ),
-            IconButton(
-              onPressed: () {
-                // backward
-              },
-              icon: Icon(
-                Icons.arrow_back_sharp,
-              ),
-            )
-          ],
+          children: [],
         )
       ],
     );
