@@ -1,7 +1,7 @@
 // ignore_for_file: constant_identifier_names
 
 class ConstanceData {
-  //
+  // base urls
   static const String baseImageUrl = "assets/images/";
   static const String baseSvgUrl = "assets/svgs/";
 
@@ -16,6 +16,12 @@ class ConstanceData {
   static const color_picker = baseImageUrl + "color-picker.png";
   static const cursor = baseImageUrl + "cursor.png";
   static const hand = baseImageUrl + "hand.png";
+  static const case1 = baseImageUrl + "cases-pic-1.jpg";
+  static const case2 = baseImageUrl + "cases-pic-2.jpg";
+  static const case3 = baseImageUrl + "cases-pic-3.jpg";
+  static const case4 = baseImageUrl + "cases-pic-4.jpg";
+  static const case5 = baseImageUrl + "cases-pic-5.jpg";
+  static const case6 = baseImageUrl + "cases-pic-6.jpg";
 
   // app svgs
   static const appicon = baseSvgUrl + "appicon.svg";

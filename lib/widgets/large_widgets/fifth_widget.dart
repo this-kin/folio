@@ -35,6 +35,7 @@ class FifthWidget extends StatelessWidget {
             "Look at My\nProducts.",
             style: CustomTheme.largeText(context),
           ),
+          const SizedBox(width: 20),
         ],
       ),
     );
