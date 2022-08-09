@@ -1,4 +1,5 @@
 import 'package:portfolio/core/exports.dart';
+import 'package:portfolio/widgets/large_widgets/tab_view.dart';
 
 class TabWidget extends StatefulWidget {
   const TabWidget({Key key}) : super(key: key);
@@ -13,10 +14,12 @@ class _TabWidgetState extends State<TabWidget> {
     return DefaultTabController(
       length: 3,
       child: Column(
-        children: [
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: const [
           SizedBox(
             width: 370,
             child: TabBar(
+              indicatorColor: purpleColor,
               tabs: [
                 Tab(
                   text: "Website",
@@ -27,6 +30,18 @@ class _TabWidgetState extends State<TabWidget> {
                 Tab(
                   text: "Mobile",
                 ),
+              ],
+            ),
+          ),
+          SizedBox(height: 50),
+          SizedBox(
+            width: double.infinity,
+            height: 2000,
+            child: TabBarView(
+              children: [
+                TabView(),
+                TabView(),
+                TabView(),
               ],
             ),
           )
