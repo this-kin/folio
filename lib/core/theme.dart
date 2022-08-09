@@ -72,6 +72,19 @@ class CustomTheme {
         bodyColor: greyTextColor,
       ),
       fontFamily: GoogleFonts.poppins().fontFamily,
+      tabBarTheme: TabBarTheme(
+        indicatorSize: TabBarIndicatorSize.label,
+        labelColor: blackColor,
+        unselectedLabelColor: greyTextColor,
+        labelStyle: CustomTheme.mediumText(context).copyWith(
+          color: blackColor,
+          fontWeight: FontWeight.w900,
+        ),
+        unselectedLabelStyle: CustomTheme.mediumText(context).copyWith(
+          color: greyTextColor,
+          fontWeight: FontWeight.w900,
+        ),
+      ),
       pageTransitionsTheme: const PageTransitionsTheme(
         builders: {
           TargetPlatform.android: FadeUpwardsPageTransitionsBuilder(),

@@ -1,4 +1,5 @@
 import 'package:portfolio/core/exports.dart';
+import 'package:portfolio/widgets/large_widgets/tab_widget.dart';
 
 class FifthWidget extends StatelessWidget {
   const FifthWidget({Key key}) : super(key: key);
@@ -35,7 +36,9 @@ class FifthWidget extends StatelessWidget {
             "Look at My\nProducts.",
             style: CustomTheme.largeText(context),
           ),
-          const SizedBox(width: 20),
+          const SizedBox(height: 50),
+          const TabWidget(),
+          const SizedBox(height: 50),
         ],
       ),
     );

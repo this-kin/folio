@@ -38,7 +38,7 @@ dependencies:
   flutter_svg:
   url_launcher: 
   get:
-
+  responsive_framework: ^0.2.0
 
 dev_dependencies:
   flutter_test:
