@@ -36,7 +36,7 @@ class _TabWidgetState extends State<TabWidget> {
           SizedBox(height: 50),
           SizedBox(
             width: double.infinity,
-            height: 2000,
+            height: 1880,
             child: TabBarView(
               children: [
                 TabView(),

@@ -73,7 +73,6 @@ class CustomTheme {
       ),
       fontFamily: GoogleFonts.poppins().fontFamily,
       tabBarTheme: TabBarTheme(
-      
         indicatorSize: TabBarIndicatorSize.label,
         labelColor: blackColor,
         unselectedLabelColor: greyTextColor,

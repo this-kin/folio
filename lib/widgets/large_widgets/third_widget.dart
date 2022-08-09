@@ -18,18 +18,19 @@ class ThirdWidget extends StatelessWidget {
             width: MediaQuery.of(context).size.width,
             child: ListView.builder(
               shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
               scrollDirection: Axis.horizontal,
               itemCount: specializations.length,
               itemBuilder: (context, index) {
                 final snapshot = specializations[index];
                 return Padding(
                   padding:
-                      const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+                      const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
                   child: Container(
-                    width: MediaQuery.of(context).size.width / 4,
+                    width: MediaQuery.of(context).size.width / 3.8,
                     decoration: BoxDecoration(
                       color: backgroundColor,
-                      borderRadius: BorderRadius.circular(40),
+                      borderRadius: BorderRadius.circular(30),
                       boxShadow: const [
                         BoxShadow(
                           color: transparency,
@@ -37,8 +38,8 @@ class ThirdWidget extends StatelessWidget {
                           offset: Offset(0, 0),
                         ),
                         BoxShadow(
-                          color: Color.fromRGBO(0, 0, 0, 0.1),
-                          blurRadius: 30,
+                          color: Color.fromRGBO(0, 0, 0, 0.04),
+                          blurRadius: 20,
                           spreadRadius: 3,
                           offset: Offset(1, 3),
                         ),
