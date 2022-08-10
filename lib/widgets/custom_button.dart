@@ -91,8 +91,8 @@ class ScrollButton extends StatelessWidget {
           BoxShadow(
             color: Color.fromRGBO(0, 0, 0, 0.1),
             blurRadius: 20,
-            spreadRadius: 3,
-            offset: Offset(1, 3),
+            spreadRadius: 2,
+            offset: Offset(1, 1),
           ),
         ],
       ),
