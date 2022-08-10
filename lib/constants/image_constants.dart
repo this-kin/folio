@@ -22,6 +22,7 @@ class ConstanceData {
   static const case4 = baseImageUrl + "cases-pic-4.jpg";
   static const case5 = baseImageUrl + "cases-pic-5.jpg";
   static const case6 = baseImageUrl + "cases-pic-6.jpg";
+  static const ava = baseImageUrl + "ava.jpg";
 
   // app svgs
   static const appicon = baseSvgUrl + "appicon.svg";
