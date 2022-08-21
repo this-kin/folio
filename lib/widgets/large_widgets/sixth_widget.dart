@@ -39,45 +39,43 @@ class SixthWidget extends StatelessWidget {
                 itemBuilder: (context, index) {
                   return Stack(
                     children: [
-                      Align(
-                        alignment: Alignment.bottomCenter,
-                        child: Padding(
-                          padding: const EdgeInsets.only(
-                              top: 12, left: 15, right: 15),
-                          child: Container(
-                            height: 350,
-                            width: 600,
-                            decoration: BoxDecoration(
-                                color: const Color.fromRGBO(0, 0, 0, 0.05),
-                                borderRadius: BorderRadius.circular(20),
-                                boxShadow: const [
-                                  BoxShadow(
-                                    color: Color.fromRGBO(0, 0, 0, 0.04),
-                                    blurRadius: 20,
-                                    spreadRadius: 3,
-                                    offset: Offset(1, 1),
-                                  ),
-                                  BoxShadow(
-                                    color: Color.fromRGBO(0, 0, 0, 0.04),
-                                    blurRadius: 20,
-                                    spreadRadius: 3,
-                                    offset: Offset(1, 1),
-                                  ),
-                                ]),
-                          ),
-                        ),
-                      ),
+                      // Align(
+                      //   alignment: Alignment.bottomCenter,
+                      //   child: Padding(
+                      //     padding: const EdgeInsets.all(10),
+                      //     child: Container(
+                      //       height: 350,
+                      //       width: 600,
+                      //       decoration: BoxDecoration(
+                      //         color: backgroundColor,
+                      //         borderRadius: BorderRadius.circular(20),
+                      //       ),
+                      //     ),
+                      //   ),
+                      // ),
                       Align(
                         alignment: Alignment.topCenter,
                         child: Padding(
-                          padding: const EdgeInsets.symmetric(
-                              horizontal: 15, vertical: 10),
+                          padding: const EdgeInsets.all(20),
                           child: Container(
                             height: 345,
                             width: 600,
                             decoration: BoxDecoration(
                               color: backgroundColor,
-                              borderRadius: BorderRadius.circular(20),
+                              borderRadius: BorderRadius.circular(25),
+                              boxShadow: const [
+                                BoxShadow(
+                                  color: transparency,
+                                  blurRadius: 0,
+                                  offset: Offset(0, 0),
+                                ),
+                                BoxShadow(
+                                  color: Color.fromRGBO(0, 0, 0, 0.04),
+                                  blurRadius: 10,
+                                  spreadRadius: 5,
+                                  offset: Offset(1, 3),
+                                ),
+                              ],
                             ),
                             child: Padding(
                               padding: const EdgeInsets.all(40),
@@ -94,15 +92,15 @@ class SixthWidget extends StatelessWidget {
                                         fontSize: 22,
                                       ),
                                     ),
-                                    const SizedBox(height: 25),
+                                    const SizedBox(height: 40),
                                     Row(
                                       children: [
                                         Image.asset(
                                           ConstanceData.ava,
-                                          height: 45,
-                                          width: 45,
+                                          height: 55,
+                                          width: 55,
                                         ),
-                                        const SizedBox(width: 10),
+                                        const SizedBox(width: 30),
                                         Column(
                                           crossAxisAlignment:
                                               CrossAxisAlignment.start,
@@ -118,7 +116,7 @@ class SixthWidget extends StatelessWidget {
                                             // const SizedBox(height: 15),
                                             Text(
                                               "UI8",
-                                              style: CustomTheme.normalText(
+                                              style: CustomTheme.mediumText(
                                                       context)
                                                   .copyWith(
                                                 color: greyTextColor,
@@ -141,7 +139,7 @@ class SixthWidget extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(height: 100),
+          const SizedBox(height: 150),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -160,9 +158,9 @@ class SixthWidget extends StatelessWidget {
               ),
             ],
           ),
+          const SizedBox(height: 150),
         ],
       ),
     );
   }
-
 }
