@@ -130,7 +130,7 @@ class CustomTextButton extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        const SizedBox(width: 100),
+        //    const SizedBox(width: 100),
         SvgPicture.asset(
           icon,
           fit: BoxFit.scaleDown,

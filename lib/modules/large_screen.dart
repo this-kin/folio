@@ -6,6 +6,7 @@ import 'package:portfolio/widgets/large_widgets/first_widget.dart';
 import 'package:portfolio/widgets/large_widgets/fourth_widget.dart';
 import 'package:portfolio/widgets/large_widgets/large_background.dart';
 import 'package:portfolio/widgets/large_widgets/large_drawer.dart';
+import 'package:portfolio/widgets/large_widgets/last_widget.dart';
 import 'package:portfolio/widgets/large_widgets/second_widget.dart';
 import 'package:portfolio/widgets/large_widgets/sixth_widget.dart';
 import 'package:portfolio/widgets/large_widgets/third_widget.dart';
@@ -48,6 +49,7 @@ class _LargeScreenState extends State<LargeScreen> {
                       FourthWidget(),
                       FifthWidget(),
                       SixthWidget(),
+                      LastWidget(),
                     ],
                   ),
                 ),

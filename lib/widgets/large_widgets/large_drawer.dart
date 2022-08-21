@@ -89,35 +89,38 @@ class _LargeDrawerState extends State<LargeDrawer>
                       children: [
                         const Spacer(),
                         Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              CustomTextButton(
-                                icon: ConstanceData.message,
-                                text: 'hello@ui8.net',
-                                onPressed: () {
-                                  // send mail
-                                },
-                              ),
-                              const SizedBox(height: 30),
-                              CustomTextButton(
-                                icon: ConstanceData.location,
-                                text:
-                                    '4074 Ebert Summit Suite 375\nLake Leonardchester',
-                                onPressed: () {
-                                  // send mail
-                                },
-                              ),
-                              const SizedBox(height: 30),
-                              CustomTextButton(
-                                icon: ConstanceData.phone,
-                                text: '+44 123 654 7890',
-                                onPressed: () {
-                                  // phone call
-                                },
-                              ),
-                              const SizedBox(height: 250),
-                            ],
+                          child: Padding(
+                            padding: const EdgeInsets.only(left: 150),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                CustomTextButton(
+                                  icon: ConstanceData.message,
+                                  text: 'hello@ui8.net',
+                                  onPressed: () {
+                                    // send mail
+                                  },
+                                ),
+                                const SizedBox(height: 30),
+                                CustomTextButton(
+                                  icon: ConstanceData.location,
+                                  text:
+                                      '4074 Ebert Summit Suite 375\nLake Leonardchester',
+                                  onPressed: () {
+                                    // send mail
+                                  },
+                                ),
+                                const SizedBox(height: 30),
+                                CustomTextButton(
+                                  icon: ConstanceData.phone,
+                                  text: '+44 123 654 7890',
+                                  onPressed: () {
+                                    // phone call
+                                  },
+                                ),
+                                const SizedBox(height: 250),
+                              ],
+                            ),
                           ),
                         ),
                         const SizedBox(width: 50),
