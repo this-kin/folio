@@ -90,7 +90,10 @@ class LastWidget extends StatelessWidget {
                     ),
                     Expanded(
                       child: Column(
-                        children: [],
+                        children: [
+                          SizedBox(height: 200),
+                          
+                        ],
                       ),
                     ),
                   ],

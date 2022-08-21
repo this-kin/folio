@@ -35,4 +35,8 @@ class ConstanceData {
   static const location = baseSvgUrl + "location.svg";
   static const arrow_front = baseSvgUrl + "arrow_front.svg";
   static const arrow_back = baseSvgUrl + "arrow_back.svg";
+  static const field_icon = baseSvgUrl + "field_icon.svg";
+  static const chat = baseSvgUrl + "chat.svg";
+  static const send = baseSvgUrl + "send.svg";
+  static const person = baseSvgUrl + "person.svg";
 }
