@@ -50,13 +50,13 @@ class SocialButton extends StatelessWidget {
             children: [
               SvgPicture.asset(
                 icon,
-                height: 20,
-                width: 20,
+                height: 25,
+                width: 25,
               ),
               const SizedBox(width: 12),
               Text(
                 title,
-                style: CustomTheme.mediumText(context).copyWith(
+                style: CustomTheme.semiLargeText(context).copyWith(
                   color: const Color(0xff9F9FA9),
                   fontWeight: FontWeight.w700,
                 ),

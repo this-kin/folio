@@ -48,6 +48,7 @@ class SecondWidget extends StatelessWidget {
           Row(
             children: [
               ContactButton(
+                text: "Contact Me",
                 onPressed: () {
                   // contact me
                 },
