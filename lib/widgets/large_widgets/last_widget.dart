@@ -1,6 +1,7 @@
 import 'package:portfolio/core/exports.dart';
 import 'package:portfolio/widgets/custom_button.dart';
 import 'package:portfolio/widgets/large_widgets/field_widget.dart';
+import 'package:portfolio/widgets/large_widgets/hover_text.dart';
 
 class LastWidget extends StatelessWidget {
   const LastWidget({Key key}) : super(key: key);
@@ -222,12 +223,121 @@ class LastWidget extends StatelessWidget {
                     ],
                   ),
                 ),
-                const SizedBox(height: 100)
+                const SizedBox(height: 100),
               ],
             ),
           ),
         ),
-        const SizedBox(height: 500),
+        const SizedBox(height: 100),
+        Container(
+          color: darkBlueColor,
+          alignment: Alignment.topCenter,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 100),
+            child: Column(
+              children: [
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        SvgPicture.asset(
+                          ConstanceData.appcon,
+                        ),
+                        const SizedBox(height: 200),
+                      ],
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "You only have one\nchance to make a first\nimpression.",
+                          style: CustomTheme.largeText(context).copyWith(
+                            color: backgroundColor,
+                            fontSize: 45,
+                          ),
+                        ),
+                        const SizedBox(height: 100),
+                        Text(
+                          "Let's make it an amazing one.",
+                          style: CustomTheme.semiLargeText(context).copyWith(
+                            color: pinkColor,
+                          ),
+                        ),
+                        const SizedBox(height: 200),
+                      ],
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: [
+                        kTextButton(
+                          text: "About Me",
+                          onPressed: () {
+                            // scroll up
+                          },
+                        ),
+                        kTextButton(
+                          text: "Projects",
+                          onPressed: () {
+                            // scroll up
+                          },
+                        ),
+                        kTextButton(
+                          text: "Contact",
+                          onPressed: () {
+                            // scroll up
+                          },
+                        ),
+                        kTextButton(
+                          text: "Dribbble",
+                          onPressed: () {
+                            // scroll up
+                          },
+                        ),
+                        kTextButton(
+                          text: "Instagram",
+                          onPressed: () {
+                            // scroll up
+                          },
+                        ),
+                        const SizedBox(height: 200),
+                      ],
+                    )
+                  ],
+                ),
+                Container(
+                  height: 0.5,
+                  width: double.infinity,
+                  color: greyColor,
+                ),
+                const SizedBox(height: 80),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "© 2020, UI8 LLC.",
+                      style: CustomTheme.semiLargeText(context).copyWith(
+                        color: backgroundColor,
+                      ),
+                    ),
+                    kTextButton(
+                      text: "Back to top",
+                      onPressed: () {
+                        // scroll up
+                      },
+                    )
+                  ],
+                ),
+                const SizedBox(height: 120),
+              ],
+            ),
+          ),
+        ),
       ],
     );
   }

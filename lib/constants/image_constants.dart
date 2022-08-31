@@ -39,4 +39,5 @@ class ConstanceData {
   static const chat = baseSvgUrl + "chat.svg";
   static const send = baseSvgUrl + "send.svg";
   static const person = baseSvgUrl + "person.svg";
+  static const appcon = baseSvgUrl + "logo-empty.svg";
 }
