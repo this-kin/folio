@@ -16,7 +16,7 @@ class CustomTheme {
   }
 
   static TextStyle semiLargeText(BuildContext context) {
-    return Theme.of(context).textTheme.headline1.copyWith(
+    return Theme.of(context).textTheme.headline5.copyWith(
           fontSize: 20.0,
           fontWeight: FontWeight.w700,
           color: blackColor,
@@ -25,7 +25,7 @@ class CustomTheme {
   }
 
   static TextStyle mediumText(BuildContext context) {
-    return Theme.of(context).textTheme.headline6.copyWith(
+    return Theme.of(context).textTheme.headline5.copyWith(
           fontSize: 16.0,
           fontWeight: FontWeight.w700,
           color: blackColor,
@@ -34,7 +34,7 @@ class CustomTheme {
   }
 
   static TextStyle normalText(BuildContext context) {
-    return Theme.of(context).textTheme.headline1.copyWith(
+    return Theme.of(context).textTheme.headline5.copyWith(
           fontSize: 14.0,
           fontWeight: FontWeight.w500,
           color: blackColor,
@@ -43,7 +43,7 @@ class CustomTheme {
   }
 
   static TextStyle smallText(BuildContext context) {
-    return Theme.of(context).textTheme.headline1.copyWith(
+    return Theme.of(context).textTheme.headline5.copyWith(
           fontSize: 12.0,
           fontWeight: FontWeight.w300,
           color: blackColor,
@@ -52,7 +52,7 @@ class CustomTheme {
   }
 
   static TextStyle smallestText(BuildContext context) {
-    return Theme.of(context).textTheme.headline1.copyWith(
+    return Theme.of(context).textTheme.headline5.copyWith(
           fontSize: 10.0,
           fontWeight: FontWeight.w300,
           color: blackColor,
