@@ -8,7 +8,7 @@ class CustomTheme {
 
   static TextStyle largeText(BuildContext context) {
     return Theme.of(context).textTheme.headline1.copyWith(
-          fontSize: 65.0,
+          fontSize: 70.0,
           fontWeight: FontWeight.bold,
           color: blackColor,
           fontFamily: GoogleFonts.poppins().fontFamily,
