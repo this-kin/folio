@@ -26,11 +26,11 @@ class _FirstWidgetState extends State<FirstWidget>
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 90),
+      padding: const EdgeInsets.symmetric(horizontal: 80),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const SizedBox(height: 50),
+          const SizedBox(height: 60),
           Row(
             children: [
               SvgPicture.asset(

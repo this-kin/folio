@@ -7,6 +7,7 @@ class SecondWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: backgroundColor,
       padding: const EdgeInsets.symmetric(horizontal: 90),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

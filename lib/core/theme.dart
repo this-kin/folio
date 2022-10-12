@@ -8,7 +8,7 @@ class CustomTheme {
 
   static TextStyle largeText(BuildContext context) {
     return Theme.of(context).textTheme.headline1.copyWith(
-          fontSize: 70.0,
+          fontSize: 60.0,
           fontWeight: FontWeight.bold,
           color: blackColor,
           fontFamily: GoogleFonts.poppins().fontFamily,
@@ -17,7 +17,7 @@ class CustomTheme {
 
   static TextStyle semiLargeText(BuildContext context) {
     return Theme.of(context).textTheme.headline5.copyWith(
-          fontSize: 20.0,
+          fontSize: 17.0,
           fontWeight: FontWeight.w700,
           color: blackColor,
           fontFamily: GoogleFonts.poppins().fontFamily,
@@ -26,7 +26,7 @@ class CustomTheme {
 
   static TextStyle mediumText(BuildContext context) {
     return Theme.of(context).textTheme.headline5.copyWith(
-          fontSize: 16.0,
+          fontSize: 14.0,
           fontWeight: FontWeight.w700,
           color: blackColor,
           fontFamily: GoogleFonts.poppins().fontFamily,
@@ -35,7 +35,7 @@ class CustomTheme {
 
   static TextStyle normalText(BuildContext context) {
     return Theme.of(context).textTheme.headline5.copyWith(
-          fontSize: 14.0,
+          fontSize: 12.0,
           fontWeight: FontWeight.w500,
           color: blackColor,
           fontFamily: GoogleFonts.poppins().fontFamily,
@@ -44,7 +44,7 @@ class CustomTheme {
 
   static TextStyle smallText(BuildContext context) {
     return Theme.of(context).textTheme.headline5.copyWith(
-          fontSize: 12.0,
+          fontSize: 10.0,
           fontWeight: FontWeight.w300,
           color: blackColor,
           fontFamily: GoogleFonts.poppins().fontFamily,
@@ -53,7 +53,7 @@ class CustomTheme {
 
   static TextStyle smallestText(BuildContext context) {
     return Theme.of(context).textTheme.headline5.copyWith(
-          fontSize: 10.0,
+          fontSize: 8.0,
           fontWeight: FontWeight.w300,
           color: blackColor,
           fontFamily: GoogleFonts.poppins().fontFamily,
