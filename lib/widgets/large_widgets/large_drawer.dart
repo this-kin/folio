@@ -1,17 +1,16 @@
-import 'package:get/get.dart';
-import 'package:portfolio/constants/controller.dart';
 import 'package:portfolio/core/exports.dart';
+import 'package:portfolio/widgets/backgound_widgets.dart';
 import 'package:portfolio/widgets/custom_button.dart';
 import 'package:portfolio/widgets/large_widgets/large_background.dart';
 
-class LargeDrawer extends StatefulWidget {
-  const LargeDrawer({Key key}) : super(key: key);
+class AppDrawer extends StatefulWidget {
+  const AppDrawer({Key key}) : super(key: key);
 
   @override
-  State<LargeDrawer> createState() => _LargeDrawerState();
+  State<AppDrawer> createState() => _AppDrawerState();
 }
 
-class _LargeDrawerState extends State<LargeDrawer>
+class _AppDrawerState extends State<AppDrawer>
     with SingleTickerProviderStateMixin {
   //
   AnimationController _controller;
@@ -41,7 +40,7 @@ class _LargeDrawerState extends State<LargeDrawer>
           ),
           child: Stack(
             children: [
-              const LargeDrawerPattern(),
+              const AppDrawerPattern(),
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 70),
                 child: Column(

@@ -1,3 +1,4 @@
+import 'package:get/get_navigation/get_navigation.dart';
 import 'package:portfolio/core/exports.dart';
 import 'package:portfolio/modules/home_page.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         statusBarColor: Colors.transparent,
       ),
     );
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Folio',
       theme: CustomTheme.getTheme(context),

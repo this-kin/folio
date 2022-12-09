@@ -1,4 +1,6 @@
 import 'package:portfolio/core/exports.dart';
+import 'package:portfolio/widgets/large_widgets/large_background.dart';
+import 'package:portfolio/widgets/large_widgets/large_drawer.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key key}) : super(key: key);
@@ -9,9 +11,6 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage>
     with SingleTickerProviderStateMixin {
-  //
-  final GlobalKey<ScaffoldState> _globalKey = GlobalKey<ScaffoldState>();
-
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
@@ -21,13 +20,30 @@ class _HomePageState extends State<HomePage>
         statusBarBrightness: Brightness.light,
         statusBarColor: Colors.transparent,
       ),
-      child: Scaffold(
-        backgroundColor: theme.backgroundColor,
-        key: _globalKey,
-        body: const ResponsiveWidget(
-          largeScreen: LargeScreen(),
-          smallScreen: SmallScreen(),
-        ),
+      child: GetBuilder<AppController>(
+        init: appController,
+        builder: (controller) {
+          return Scaffold(
+            drawer: const AppDrawer(),
+            backgroundColor: theme.backgroundColor,
+            key: controller.globalKey.value,
+            body: Container(
+              color: backgroundColor,
+              child: Stack(
+                children: [
+                  const BackgroundPattern(),
+                  ScrollConfiguration(
+                    behavior: ScrollConfiguration.of(context)
+                        .copyWith(scrollbars: false),
+                    child: Column(
+                      children: [],
+                    ),
+                  )
+                ],
+              ),
+            ),
+          );
+        },
       ),
     );
   }

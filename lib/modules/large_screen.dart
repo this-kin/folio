@@ -32,7 +32,6 @@ class _LargeScreenState extends State<LargeScreen> {
         () => Scaffold(
           backgroundColor: theme.backgroundColor,
           key: appController.globalKey.value,
-          drawer: const LargeDrawer(),
           body: Stack(
             children: [
               const BackgroundPattern(),
