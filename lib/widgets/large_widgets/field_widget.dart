@@ -21,7 +21,7 @@ class CustomField extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: isMessage ? 250 : 100,
-      width: 500,
+      width: 400,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
       ),

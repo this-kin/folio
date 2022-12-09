@@ -1,5 +1,5 @@
-import 'package:portfolio/constants/string_constant.dart';
 import 'package:portfolio/core/exports.dart';
+import 'package:portfolio/data/models/case_model.dart';
 
 class TabView extends StatelessWidget {
   const TabView({Key key}) : super(key: key);

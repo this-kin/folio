@@ -1,5 +1,5 @@
-import 'package:portfolio/constants/string_constant.dart';
 import 'package:portfolio/core/exports.dart';
+import 'package:portfolio/data/models/specialization_model.dart';
 import 'package:portfolio/widgets/custom_button.dart';
 
 class ThirdWidget extends StatelessWidget {

@@ -1,9 +1,10 @@
+ ![Logo](screenshots/logo.svg)
 # Web Portifolio Template for Designers 👋
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000)
 [![License: APACHE](https://img.shields.io/badge/License-APACHE-yellow.svg)](#)
 
- ![Logo](screenshots/logo.svg)
+
 
 
 
@@ -19,11 +20,11 @@ Flutter 3.0.2
 - Any IDE with Flutter SDK installed (ie. IntelliJ, Android Studio, VSCode etc)
 - A little knowledge of Dart and Flutter
 
-# Screenshots
+ # Screenshots 
 
  | 1 | 2|
 |------|-------|
-|<img src="ss/onboard11.png" width="400">|<img src="ss/onboard1.png" width="400">|
+|<img src="screenshots/screenshot.png" width="400">|<img src="ss/onboard1.png" width="400">|
 
 
  | 3 | 4|
@@ -61,7 +62,7 @@ Flutter 3.0.2
 
  | 17 | 18|
 |------|-------|
-|<img src="ss/ss7.png" width="400">|<img src="ss/ss11.png" width="400">|
+|<img src="ss/ss7.png" width="400">|<img src="ss/ss11.png" width="400">| -->
 
 # Command
 ### Install dependencies
@@ -80,30 +81,19 @@ flutter run
 ### Build
 
 ```sh
-flutter build apk
+flutter build web
 ```
 
 # Plugins
 
-- [firebase_core](https://pub.dev/packages/firebase_core) 
-- [firebase_auth](https://pub.dev/packages/firebase_auth) 
-- [google_sign_in](https://pub.dev/packages/google_sign_in) 
-- [sqflite](https://pub.dev/packages/sqflite) 
-- [path_provider](https://pub.dev/packages/path_provider) 
-- [shared_preferences](https://pub.dev/packages/shared_preferences) 
-- [fl_chart](https://pub.dev/packages/fl_chart) 
-- [flutter_local_notifications](https://pub.dev/packages/flutter_local_notifications) 
-- [syncfusion_flutter_datepicker](https://pub.dev/packages/syncfusion_flutter_datepicker)
-- [feedback](https://pub.dev/packages/feedback) 
-- [cached_network_image](https://pub.dev/packages/cached_network_image) 
-- [url_launcher](https://pub.dev/packages/url_launcher)
-- [flutter_phoenix](https://pub.dev/packages/flutter_phoenix)
-- [date_picker_timeline](https://pub.dev/packages/date_picker_timeline)
-- [fluttericon](https://pub.dev/packages/fluttericon)
-- [fluttertoast](https://pub.dev/packages/fluttertoast)
+- [flutter_svg](https://pub.dev/packages/flutter_svg) 
+- [google_fonts](https://pub.dev/packages/google_fonts) 
+- [url_launcher](https://pub.dev/packages/url_launcher) 
+- [get](https://pub.dev/packages/get) 
 
 
-# Features
+
+<!-- # Features
 - Light/Dark Theme
 - Create Task 
 - Delete Task
@@ -115,21 +105,12 @@ flutter build apk
 - Local Notification
 - Follow on Twitter
 - Dismissible Slider 
-- Local Notification
+- Local Notification -->
 
-# Coming Soon
-- Attachment (image, audio, doc/pdf)
-- Animated avatar
-- logout 
-- save theme state
-- save language state
-- daily reminder 
-- dismissible to update
-- charts for task 
-- create and display image task 
-- create and display audio task 
-- Daily Notification
-- loaders
+
+## Inspiration
+ * Dribbble: [@UI8](https://dribbble.com/shots/14119816-Folio-Designer-Portfolio-Kit-Mobile-Version)
+
 
 
 ## Author
@@ -142,5 +123,8 @@ flutter build apk
 ## Contributors
 
 👤 **Dammy Richie**
+
+
+
 
 

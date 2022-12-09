@@ -12,9 +12,9 @@ class LastWidget extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 120),
+          padding: const EdgeInsets.symmetric(horizontal: 100),
           child: Container(
-            height: 2020,
+            height: 2010,
             decoration: BoxDecoration(
               color: purpleColor,
               borderRadius: BorderRadius.circular(50),
@@ -56,7 +56,7 @@ class LastWidget extends StatelessWidget {
               child: Column(
                 children: [
                   Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 100),
+                    padding: const EdgeInsets.symmetric(horizontal: 50),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -166,10 +166,10 @@ class LastWidget extends StatelessWidget {
                               isMessage: true,
                             ),
                             Padding(
-                              padding: const EdgeInsets.only(right: 230),
+                              padding: const EdgeInsets.only(right: 200),
                               child: Container(
-                                height: 90,
-                                width: 270,
+                                height: 70,
+                                width: 200,
                                 decoration: BoxDecoration(
                                   color: purpleColor,
                                   borderRadius: BorderRadius.circular(20),
@@ -358,7 +358,6 @@ class LastWidget extends StatelessWidget {
                     )
                   ],
                 ),
-                const SizedBox(height: 120),
               ],
             ),
           ),
