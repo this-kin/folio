@@ -1,6 +1,7 @@
 import 'package:portfolio/core/exports.dart';
 import 'package:portfolio/widgets/large_widgets/large_background.dart';
 import 'package:portfolio/widgets/large_widgets/large_drawer.dart';
+import 'package:portfolio/widgets/small_widgets/background_widgets.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key key}) : super(key: key);
@@ -31,7 +32,11 @@ class _HomePageState extends State<HomePage>
               color: backgroundColor,
               child: Stack(
                 children: [
-                  const BackgroundPattern(),
+                  const ResponsiveWidget(
+                    largeScreen: BackgroundPattern(),
+                    mediumScreen: BackgroundPattern(),
+                    smallScreen: SmallBackgroundPattern(),
+                  ),
                   ScrollConfiguration(
                     behavior: ScrollConfiguration.of(context)
                         .copyWith(scrollbars: false),

@@ -1,5 +1,3 @@
-import 'package:get/get.dart';
-import 'package:portfolio/constants/controller.dart';
 import 'package:portfolio/core/exports.dart';
 import 'package:portfolio/widgets/large_widgets/fifth_widget.dart';
 import 'package:portfolio/widgets/large_widgets/first_widget.dart';
