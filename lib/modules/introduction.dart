@@ -1,16 +1,14 @@
-import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
-import 'package:portfolio/constants/controller.dart';
 import 'package:portfolio/core/exports.dart';
 import 'package:portfolio/widgets/custom_button.dart';
 
-class FirstWidget extends StatefulWidget {
-  const FirstWidget({Key key}) : super(key: key);
+class NameWidget extends StatefulWidget {
+  const NameWidget({Key key}) : super(key: key);
 
   @override
-  State<FirstWidget> createState() => _FirstWidgetState();
+  State<NameWidget> createState() => _NameWidgetState();
 }
 
-class _FirstWidgetState extends State<FirstWidget>
+class _NameWidgetState extends State<NameWidget>
     with SingleTickerProviderStateMixin {
   //
   AnimationController _controller;
@@ -37,6 +35,7 @@ class _FirstWidgetState extends State<FirstWidget>
                 ConstanceData.appicon,
                 fit: BoxFit.scaleDown,
               ),
+              if (ResponsiveWidget.isSmallScreen(context)) const Spacer(),
               const SizedBox(width: 50),
               SocialButton(
                 icon: ConstanceData.dribble,

@@ -1,4 +1,5 @@
 import 'package:portfolio/core/exports.dart';
+import 'package:portfolio/modules/introduction.dart';
 import 'package:portfolio/widgets/large_widgets/large_background.dart';
 import 'package:portfolio/widgets/large_widgets/large_drawer.dart';
 import 'package:portfolio/widgets/small_widgets/background_widgets.dart';
@@ -40,8 +41,12 @@ class _HomePageState extends State<HomePage>
                   ScrollConfiguration(
                     behavior: ScrollConfiguration.of(context)
                         .copyWith(scrollbars: false),
-                    child: Column(
-                      children: [],
+                    child: SingleChildScrollView(
+                      child: Column(
+                        children: const [
+                          NameWidget(),
+                        ],
+                      ),
                     ),
                   )
                 ],

@@ -1,6 +1,6 @@
 import 'package:portfolio/core/exports.dart';
 import 'package:portfolio/widgets/large_widgets/fifth_widget.dart';
-import 'package:portfolio/widgets/large_widgets/first_widget.dart';
+import 'package:portfolio/modules/introduction.dart';
 import 'package:portfolio/widgets/large_widgets/fourth_widget.dart';
 import 'package:portfolio/widgets/large_widgets/large_background.dart';
 import 'package:portfolio/widgets/large_widgets/large_drawer.dart';
@@ -40,7 +40,7 @@ class _LargeScreenState extends State<LargeScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: const [
-                      FirstWidget(),
+                      // FirstWidget(),
                       SecondWidget(),
                       ThirdWidget(),
                       FourthWidget(),
