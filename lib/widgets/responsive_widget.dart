@@ -1,39 +1,44 @@
-import 'package:portfolio/constants/app_constant.dart';
 import 'package:portfolio/core/exports.dart';
 
 class ResponsiveWidget extends StatelessWidget {
-  final Widget largeScreen;
-  final Widget mediumScreen;
-  final Widget smallScreen;
+  final Widget mobile;
+  final Widget tablet;
+  final Widget desktop;
 
   const ResponsiveWidget({
     Key key,
-    this.largeScreen,
-    this.mediumScreen,
-    this.smallScreen,
+    this.mobile,
+    this.tablet,
+    this.desktop,
   }) : super(key: key);
 
-  static bool isLargeScreen(BuildContext context) =>
-      MediaQuery.of(context).size.width >= largeScreenSize;
+// This size work fine on my design, maybe you need some customization depends on your design
 
-  static bool isMediumScreen(BuildContext context) =>
-      MediaQuery.of(context).size.width >= mediumScreenSize &&
-      MediaQuery.of(context).size.width < largeScreenSize;
+  // This isMobile, isTablet, isDesktop helep us later
+  static bool isMobile(BuildContext context) =>
+      MediaQuery.of(context).size.width < 850;
 
-  static bool isSmallScreen(BuildContext context) =>
-      MediaQuery.of(context).size.width < mediumScreenSize;
+  static bool isTablet(BuildContext context) =>
+      MediaQuery.of(context).size.width < 1100 &&
+      MediaQuery.of(context).size.width >= 850;
+
+  static bool isDesktop(BuildContext context) =>
+      MediaQuery.of(context).size.width >= 1100;
 
   @override
   Widget build(BuildContext context) {
-    return LayoutBuilder(builder: (context, constraints) {
-      if (constraints.maxWidth >= largeScreenSize) {
-        return largeScreen;
-      } else if (constraints.maxWidth < largeScreenSize &&
-          constraints.maxWidth >= mediumScreenSize) {
-        return mediumScreen ?? largeScreen;
-      } else {
-        return smallScreen;
-      }
-    });
+    final Size _size = MediaQuery.of(context).size;
+    // If our width is more than 1100 then we consider it a desktop
+    if (_size.width >= 1100) {
+      return desktop;
+    }
+    // If width it less then 1100 and more then 850 we consider it as tablet
+    else if (_size.width >= 850 && tablet != null) {
+      return tablet;
+    }
+    // Or less then that we called it mobile
+    else {
+      return mobile;
+    }
   }
 }

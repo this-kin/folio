@@ -1,3 +1,4 @@
+import 'package:portfolio/constants/app_constant.dart';
 import 'package:portfolio/core/exports.dart';
 import 'package:portfolio/widgets/custom_button.dart';
 
@@ -24,7 +25,7 @@ class _NameWidgetState extends State<NameWidget>
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 80),
+      padding: kPadding,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -35,49 +36,57 @@ class _NameWidgetState extends State<NameWidget>
                 ConstanceData.appicon,
                 fit: BoxFit.scaleDown,
               ),
-              if (ResponsiveWidget.isSmallScreen(context)) const Spacer(),
-              const SizedBox(width: 50),
-              SocialButton(
-                icon: ConstanceData.dribble,
-                title: 'Dribble',
-                onPressed: () {
-                  // open dribbble
-                },
-              ),
-              const SizedBox(width: 70),
-              SocialButton(
-                icon: ConstanceData.instagram,
-                title: 'Instagram',
-                onPressed: () {
-                  // open instagram
-                },
-              ),
-              const Spacer(),
-              Obx(() {
-                return AnimatedContainer(
-                  decoration: BoxDecoration(
-                    color:
-                        appController.isOpen.value ? purpleColor : transparency,
-                    shape: BoxShape.circle,
-                  ),
-                  duration: const Duration(milliseconds: 500),
-                  child: RoundButton(
-                    onPressed: () {
-                      if (!appController.isOpen.value) {
+              if (!ResponsiveWidget.isMobile(context))
+                const SizedBox(width: 50),
+              if (!ResponsiveWidget.isMobile(context))
+                SocialButton(
+                  icon: ConstanceData.dribble,
+                  title: 'Dribble',
+                  onPressed: () {
+                    // open dribbble
+                  },
+                ),
+              if (!ResponsiveWidget.isMobile(context))
+                const SizedBox(width: 70),
+              if (!ResponsiveWidget.isMobile(context))
+                SocialButton(
+                  icon: ConstanceData.instagram,
+                  title: 'Instagram',
+                  onPressed: () {
+                    // open instagram
+                  },
+                ),
+              if (!ResponsiveWidget.isMobile(context) &&
+                  ResponsiveWidget.isMobile(context))
+                const Spacer(),
+              if (!ResponsiveWidget.isMobile(context) &&
+                  ResponsiveWidget.isMobile(context))
+                Obx(() {
+                  return AnimatedContainer(
+                    decoration: BoxDecoration(
+                      color: appController.isOpen.value
+                          ? purpleColor
+                          : transparency,
+                      shape: BoxShape.circle,
+                    ),
+                    duration: const Duration(milliseconds: 500),
+                    child: RoundButton(
+                      onPressed: () {
+                        if (!appController.isOpen.value) {
+                          appController.openDrawer();
+                          _controller.forward();
+                        }
                         appController.openDrawer();
                         _controller.forward();
-                      }
-                      appController.openDrawer();
-                      _controller.forward();
-                    },
-                    icon: AnimatedIcon(
-                      icon: AnimatedIcons.menu_close,
-                      color: theme.backgroundColor,
-                      progress: _controller,
+                      },
+                      icon: AnimatedIcon(
+                        icon: AnimatedIcons.menu_close,
+                        color: theme.backgroundColor,
+                        progress: _controller,
+                      ),
                     ),
-                  ),
-                );
-              })
+                  );
+                })
             ],
           ),
           const SizedBox(height: 170),

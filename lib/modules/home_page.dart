@@ -34,9 +34,9 @@ class _HomePageState extends State<HomePage>
               child: Stack(
                 children: [
                   const ResponsiveWidget(
-                    largeScreen: BackgroundPattern(),
-                    mediumScreen: BackgroundPattern(),
-                    smallScreen: SmallBackgroundPattern(),
+                    desktop: BackgroundPattern(),
+                    tablet: SizedBox(),
+                    mobile: SmallBackgroundPattern(),
                   ),
                   ScrollConfiguration(
                     behavior: ScrollConfiguration.of(context)
