@@ -35,7 +35,7 @@ class _HomePageState extends State<HomePage>
                 children: [
                   const ResponsiveWidget(
                     desktop: BackgroundPattern(),
-                    tablet: SizedBox(),
+                    tablet: BackgroundPattern(),
                     mobile: SmallBackgroundPattern(),
                   ),
                   ScrollConfiguration(
