@@ -1,4 +1,5 @@
 import 'package:portfolio/core/exports.dart';
+import 'package:portfolio/modules/contact_widget.dart';
 import 'package:portfolio/modules/introduction.dart';
 import 'package:portfolio/widgets/large_widgets/large_background.dart';
 import 'package:portfolio/widgets/large_widgets/large_drawer.dart';
@@ -45,6 +46,7 @@ class _HomePageState extends State<HomePage>
                       child: Column(
                         children: const [
                           NameWidget(),
+                          ContactWidget(),
                         ],
                       ),
                     ),

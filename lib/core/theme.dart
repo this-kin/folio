@@ -8,10 +8,11 @@ class CustomTheme {
 
   static TextStyle largeText(BuildContext context) {
     return Theme.of(context).textTheme.headline1.copyWith(
-          fontSize: 60.0,
+          fontSize: 55.0,
           fontWeight: FontWeight.bold,
           color: blackColor,
           fontFamily: GoogleFonts.poppins().fontFamily,
+          wordSpacing: 5.0,
         );
   }
 
