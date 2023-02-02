@@ -37,6 +37,7 @@ dependencies:
   flutter_svg:
   url_launcher: 
   get:
+  firebase_core: ^2.4.1
 
 dev_dependencies:
   flutter_test:

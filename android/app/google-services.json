@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "190307395844",
+    "project_id": "ui8-web",
+    "storage_bucket": "ui8-web.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:190307395844:android:f95db98d0cf20cff1c0851",
+        "android_client_info": {
+          "package_name": "com.example.portfolio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "190307395844-8rdcq5ltv05v4p68bs78f4ovasjpauqd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxlCfSilqsstMPBchYFauA2Pp5s3AO7-k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "190307395844-8rdcq5ltv05v4p68bs78f4ovasjpauqd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

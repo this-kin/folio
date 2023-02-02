@@ -1,4 +1,3 @@
-import 'package:get/get_navigation/get_navigation.dart';
 import 'package:portfolio/core/exports.dart';
 import 'package:portfolio/modules/home_page.dart';
 
