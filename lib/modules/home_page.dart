@@ -1,8 +1,13 @@
 import 'package:portfolio/core/exports.dart';
 import 'package:portfolio/modules/contact_widget.dart';
 import 'package:portfolio/modules/introduction.dart';
+import 'package:portfolio/widgets/large_widgets/fifth_widget.dart';
+import 'package:portfolio/widgets/large_widgets/fourth_widget.dart';
 import 'package:portfolio/widgets/large_widgets/large_background.dart';
 import 'package:portfolio/widgets/large_widgets/large_drawer.dart';
+import 'package:portfolio/widgets/large_widgets/last_widget.dart';
+import 'package:portfolio/widgets/large_widgets/sixth_widget.dart';
+import 'package:portfolio/widgets/large_widgets/third_widget.dart';
 import 'package:portfolio/widgets/small_widgets/background_widgets.dart';
 
 class HomePage extends StatefulWidget {
@@ -47,6 +52,11 @@ class _HomePageState extends State<HomePage>
                         children: const [
                           NameWidget(),
                           ContactWidget(),
+                          ThirdWidget(),
+                          FourthWidget(),
+                          FifthWidget(),
+                          SixthWidget(),
+                          LastWidget(),
                         ],
                       ),
                     ),
