@@ -38,6 +38,7 @@ class _HomePageState extends State<HomePage>
             body: Container(
               color: backgroundColor,
               child: Stack(
+                fit: StackFit.expand,
                 children: [
                   const ResponsiveWidget(
                     desktop: BackgroundPattern(),

@@ -57,17 +57,15 @@ class _NameWidgetState extends State<NameWidget>
                           // open dribbble
                         },
                       ),
-                    if (!ResponsiveWidget.isMobile(context))
-                      const SizedBox(width: 70),
-                    if (!ResponsiveWidget.isMobile(context))
-                      SocialButton(
-                        icon: ConstanceData.instagram,
-                        title: 'Instagram',
-                        onPressed: () {
-                          // open instagram
-                        },
-                      ),
-                    if (!ResponsiveWidget.isMobile(context)) const Spacer(),
+                    const SizedBox(width: 70),
+                    SocialButton(
+                      icon: ConstanceData.instagram,
+                      title: 'Instagram',
+                      onPressed: () {
+                        // open instagram
+                      },
+                    ),
+                    const Spacer(),
                     Obx(() {
                       return AnimatedContainer(
                         decoration: BoxDecoration(
@@ -96,7 +94,7 @@ class _NameWidgetState extends State<NameWidget>
                     })
                   ],
                 ),
-                const SizedBox(height: 170),
+                const SizedBox(height: 120),
                 Row(
                   children: [
                     Container(
