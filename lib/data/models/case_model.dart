@@ -1,4 +1,4 @@
-import 'package:portfolio/constants/image_constants.dart';
+import 'package:portfolio/core/constants/image_constants.dart';
 
 class Case {
   final String image;

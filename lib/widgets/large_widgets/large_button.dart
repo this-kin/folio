@@ -1,4 +1,4 @@
-import 'package:portfolio/core/exports.dart';
+import 'package:portfolio/core/utils/exports.dart';
 
 class ContactButton extends StatelessWidget {
   final String text;
@@ -26,7 +26,7 @@ class ContactButton extends StatelessWidget {
             child: Row(
               children: [
                 Text(
-                 text,
+                  text,
                   style: CustomTheme.mediumText(context).copyWith(
                     color: backgroundColor,
                   ),

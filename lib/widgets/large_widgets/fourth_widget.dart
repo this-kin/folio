@@ -1,4 +1,4 @@
-import 'package:portfolio/core/exports.dart';
+import 'package:portfolio/core/utils/exports.dart';
 
 class FourthWidget extends StatelessWidget {
   const FourthWidget({Key key}) : super(key: key);

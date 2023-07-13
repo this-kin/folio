@@ -1,15 +1,13 @@
-import 'package:get/get.dart';
-import 'package:portfolio/core/exports.dart';
+import 'package:portfolio/core/utils/exports.dart';
 
 class AppController extends GetxController {
+  /// instance variable of app controller
   static AppController instance = Get.put(AppController());
 
-  @override
-  void onReady() {
-    super.onReady();
-  }
+  /// a global key generic type scaffold state
+  final globalKey = GlobalKey<ScaffoldState>().obs;
 
-  var globalKey = GlobalKey<ScaffoldState>().obs;
+  ///
   Rx<bool> isOpen = Rx<bool>(false);
 
   // close drawer

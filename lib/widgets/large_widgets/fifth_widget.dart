@@ -1,4 +1,4 @@
-import 'package:portfolio/core/exports.dart';
+import 'package:portfolio/core/utils/exports.dart';
 import 'package:portfolio/widgets/large_widgets/tab_widget.dart';
 
 class FifthWidget extends StatelessWidget {

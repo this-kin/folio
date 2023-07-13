@@ -1,4 +1,4 @@
-import 'package:portfolio/core/exports.dart';
+import 'package:portfolio/core/utils/exports.dart';
 
 class ResponsiveWidget extends StatelessWidget {
   final Widget mobile;

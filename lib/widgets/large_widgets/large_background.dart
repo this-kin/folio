@@ -1,4 +1,4 @@
-import 'package:portfolio/core/exports.dart';
+import 'package:portfolio/core/utils/exports.dart';
 
 class BackgroundPattern extends StatelessWidget {
   const BackgroundPattern({Key key}) : super(key: key);
@@ -15,10 +15,18 @@ class BackgroundPattern extends StatelessWidget {
           ),
         ),
         Expanded(
-          child: Container(
+          child: SizedBox(
             height: 1200,
-            child: CustomPaint(
-              painter: BackgroundPainter(),
+            child: Stack(
+              fit: StackFit.loose,
+              children: [
+                Align(
+                  alignment: Alignment.topRight,
+                  child: CustomPaint(
+                    painter: BackgroundPainter(),
+                  ),
+                ),
+              ],
             ),
           ),
         )

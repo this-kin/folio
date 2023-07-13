@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio/constants/color_constant.dart';
+import 'package:portfolio/core/theme/color_constant.dart';
 
 class CustomTheme {
   //

@@ -1,5 +1,5 @@
-import 'package:portfolio/constants/app_constant.dart';
-import 'package:portfolio/core/exports.dart';
+import 'package:portfolio/core/constants/app_constant.dart';
+import 'package:portfolio/core/utils/exports.dart';
 import 'package:portfolio/widgets/custom_button.dart';
 
 class NameWidget extends StatefulWidget {
