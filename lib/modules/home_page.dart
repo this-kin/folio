@@ -10,15 +10,14 @@ import 'package:portfolio/widgets/large_widgets/sixth_widget.dart';
 import 'package:portfolio/widgets/large_widgets/third_widget.dart';
 import 'package:portfolio/widgets/small_widgets/background_widgets.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({Key key}) : super(key: key);
+class Home extends StatefulWidget {
+  const Home({Key key}) : super(key: key);
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<Home> createState() => _HomeState();
 }
 
-class _HomePageState extends State<HomePage>
-    with SingleTickerProviderStateMixin {
+class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);

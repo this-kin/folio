@@ -1,12 +1,14 @@
 export 'package:flutter/material.dart';
-export 'package:portfolio/core/routes/routes.dart';
+export 'package:portfolio/core/routes/router.dart';
 export 'package:portfolio/core/theme/theme.dart';
 export 'package:flutter/services.dart';
 export 'package:portfolio/modules/large_screen.dart';
 export 'package:portfolio/widgets/responsive_widget.dart';
-export 'package:get/get.dart';
+export 'package:riverpod/riverpod.dart';
+export 'package:go_router/go_router.dart';
 export 'package:portfolio/core/constants/controller.dart';
 export 'package:portfolio/data/controllers/app_controller.dart';
 export 'package:flutter_svg/flutter_svg.dart';
 export 'package:portfolio/core/constants/image_constants.dart';
 export 'package:portfolio/core/theme/color_constant.dart';
+export 'package:portfolio/modules/home_page.dart';

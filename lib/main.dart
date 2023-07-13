@@ -1,5 +1,4 @@
 import 'package:portfolio/core/utils/exports.dart';
-import 'package:portfolio/modules/home_page.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -18,13 +17,10 @@ class MyApp extends StatelessWidget {
         statusBarColor: Colors.transparent,
       ),
     );
-    return GetMaterialApp(
-      debugShowCheckedModeBanner: false,
+    return MaterialApp.router(
       title: 'Folio',
+      debugShowCheckedModeBanner: false,
       theme: CustomTheme.getTheme(context),
-      onGenerateRoute: RouteGenerator.generateRoute,
-      initialRoute: RouteGenerator.home,
-      home: const HomePage(),
     );
   }
 }
