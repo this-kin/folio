@@ -5,22 +5,16 @@ void main() {
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends ConsumerWidget {
   const MyApp({Key key}) : super(key: key);
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle(
-      const SystemUiOverlayStyle(
-        statusBarIconBrightness: Brightness.dark,
-        statusBarBrightness: Brightness.light,
-        statusBarColor: Colors.transparent,
-      ),
-    );
     return MaterialApp.router(
       title: 'Folio',
       debugShowCheckedModeBanner: false,
       theme: CustomTheme.getTheme(context),
+      routeInformationProvider: ,
     );
   }
 }
