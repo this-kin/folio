@@ -3,7 +3,7 @@ import 'package:portfolio/widgets/backgound_widgets.dart';
 import 'package:portfolio/widgets/custom_button.dart';
 
 class AppDrawer extends StatefulWidget {
-  const AppDrawer({Key key}) : super(key: key);
+  const AppDrawer({Key? key}) : super(key: key);
 
   @override
   State<AppDrawer> createState() => _AppDrawerState();
@@ -12,8 +12,8 @@ class AppDrawer extends StatefulWidget {
 class _AppDrawerState extends State<AppDrawer>
     with SingleTickerProviderStateMixin {
   //
-  AnimationController _controller;
-  Animation _animation;
+  late AnimationController _controller;
+  late Animation _animation;
 
   @override
   void initState() {
@@ -64,32 +64,37 @@ class _AppDrawerState extends State<AppDrawer>
                                   fit: BoxFit.scaleDown,
                                   color: backgroundColor,
                                 ),
-                                Obx(() {
-                                  return AnimatedContainer(
-                                    decoration: BoxDecoration(
-                                      color: !appController.isOpen.value
-                                          ? transparency
-                                          : purpleColor,
-                                      shape: BoxShape.circle,
-                                    ),
-                                    duration: const Duration(milliseconds: 500),
-                                    child: RoundButton(
-                                      onPressed: () {
-                                        if (appController.isOpen.value) {
+                                Consumer(
+                                  builder: (context, ref, child) {
+                                    final appController =
+                                        ref.watch(appProvider);
+                                    return AnimatedContainer(
+                                      decoration: BoxDecoration(
+                                        color: !appController.isOpen
+                                            ? transparency
+                                            : purpleColor,
+                                        shape: BoxShape.circle,
+                                      ),
+                                      duration:
+                                          const Duration(milliseconds: 500),
+                                      child: RoundButton(
+                                        onPressed: () {
+                                          if (appController.isOpen) {
+                                            appController.closeDrawer();
+                                            _controller.forward();
+                                          }
                                           appController.closeDrawer();
                                           _controller.forward();
-                                        }
-                                        appController.closeDrawer();
-                                        _controller.forward();
-                                      },
-                                      icon: AnimatedIcon(
-                                        icon: AnimatedIcons.menu_close,
-                                        color: theme.backgroundColor,
-                                        progress: _controller,
+                                        },
+                                        icon: AnimatedIcon(
+                                          icon: AnimatedIcons.menu_close,
+                                          color: theme.backgroundColor,
+                                          progress: _controller,
+                                        ),
                                       ),
-                                    ),
-                                  );
-                                }),
+                                    );
+                                  },
+                                )
                               ],
                             ),
                             const SizedBox(height: 30),

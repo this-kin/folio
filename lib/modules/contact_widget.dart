@@ -3,7 +3,7 @@ import 'package:portfolio/core/utils/exports.dart';
 import 'package:portfolio/widgets/large_widgets/large_button.dart';
 
 class ContactWidget extends StatefulWidget {
-  const ContactWidget({Key key}) : super(key: key);
+  const ContactWidget({Key? key}) : super(key: key);
 
   @override
   State<ContactWidget> createState() => _ContactWidgetState();
@@ -12,8 +12,9 @@ class ContactWidget extends StatefulWidget {
 class _ContactWidgetState extends State<ContactWidget>
     with SingleTickerProviderStateMixin {
   //
-  AnimationController _controller;
-  Animation _animation;
+  late AnimationController _controller;
+  late Animation _animation;
+
   final Tween<double> _opacityTween = Tween<double>(begin: 0.4, end: 0.9);
 
   @override

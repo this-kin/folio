@@ -10,62 +10,52 @@ import 'package:portfolio/widgets/large_widgets/sixth_widget.dart';
 import 'package:portfolio/widgets/large_widgets/third_widget.dart';
 import 'package:portfolio/widgets/small_widgets/background_widgets.dart';
 
-class Home extends StatefulWidget {
-  const Home({Key key}) : super(key: key);
+class Home extends ConsumerStatefulWidget {
+  const Home({Key? key}) : super(key: key);
 
   @override
-  State<Home> createState() => _HomeState();
+  ConsumerState<Home> createState() => _HomeState();
 }
 
-class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
+class _HomeState extends ConsumerState<Home>
+    with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    return AnnotatedRegion<SystemUiOverlayStyle>(
-      value: const SystemUiOverlayStyle(
-        statusBarIconBrightness: Brightness.dark,
-        statusBarBrightness: Brightness.light,
-        statusBarColor: Colors.transparent,
-      ),
-      child: GetBuilder<AppController>(
-        init: appController,
-        builder: (controller) {
-          return Scaffold(
-            drawer: const AppDrawer(),
-            backgroundColor: theme.backgroundColor,
-            key: controller.globalKey.value,
-            body: Container(
-              color: backgroundColor,
-              child: Stack(
-                fit: StackFit.expand,
-                children: [
-                  const ResponsiveWidget(
-                    desktop: BackgroundPattern(),
-                    tablet: BackgroundPattern(),
-                    mobile: SmallBackgroundPattern(),
-                  ),
-                  ScrollConfiguration(
-                    behavior: ScrollConfiguration.of(context)
-                        .copyWith(scrollbars: false),
-                    child: SingleChildScrollView(
-                      child: Column(
-                        children: const [
-                          NameWidget(),
-                          ContactWidget(),
-                          ThirdWidget(),
-                          FourthWidget(),
-                          FifthWidget(),
-                          SixthWidget(),
-                          LastWidget(),
-                        ],
-                      ),
-                    ),
-                  )
-                ],
-              ),
+    final appController = ref.watch(appProvider);
+    return Scaffold(
+      drawer: const AppDrawer(),
+      key: appController.globalKey,
+      backgroundColor: theme.backgroundColor,
+      body: Container(
+        color: backgroundColor,
+        child: Stack(
+          fit: StackFit.expand,
+          children: [
+            const ResponsiveWidget(
+              desktop: BackgroundPattern(),
+              tablet: BackgroundPattern(),
+              mobile: SmallBackgroundPattern(),
             ),
-          );
-        },
+            ScrollConfiguration(
+              behavior:
+                  ScrollConfiguration.of(context).copyWith(scrollbars: false),
+              child: SingleChildScrollView(
+                child: Column(
+                  children: const [
+                    NameWidget(),
+                    ContactWidget(),
+                    ThirdWidget(),
+                    FourthWidget(),
+                    FifthWidget(),
+                    SixthWidget(),
+                    LastWidget(),
+                  ],
+                ),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }

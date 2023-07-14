@@ -3,7 +3,7 @@ import 'package:portfolio/core/utils/exports.dart';
 import 'package:portfolio/widgets/custom_button.dart';
 
 class NameWidget extends StatefulWidget {
-  const NameWidget({Key key}) : super(key: key);
+  const NameWidget({Key? key}) : super(key: key);
 
   @override
   State<NameWidget> createState() => _NameWidgetState();
@@ -12,8 +12,8 @@ class NameWidget extends StatefulWidget {
 class _NameWidgetState extends State<NameWidget>
     with SingleTickerProviderStateMixin {
   //
-  AnimationController _controller;
-  Animation _animation;
+  late AnimationController _controller;
+  late Animation _animation;
   final Tween<double> _opacityTween = Tween<double>(begin: 0.4, end: 0.9);
 
   @override
@@ -66,18 +66,18 @@ class _NameWidgetState extends State<NameWidget>
                       },
                     ),
                     const Spacer(),
-                    Obx(() {
+                    Consumer(builder: (_, WidgetRef ref, ___) {
+                      final appController = ref.watch(appProvider);
                       return AnimatedContainer(
                         decoration: BoxDecoration(
-                          color: appController.isOpen.value
-                              ? purpleColor
-                              : transparency,
+                          color:
+                              appController.isOpen ? purpleColor : transparency,
                           shape: BoxShape.circle,
                         ),
                         duration: const Duration(milliseconds: 500),
                         child: RoundButton(
                           onPressed: () {
-                            if (!appController.isOpen.value) {
+                            if (!appController.isOpen) {
                               appController.openDrawer();
                               _controller.forward();
                             }
@@ -91,7 +91,7 @@ class _NameWidgetState extends State<NameWidget>
                           ),
                         ),
                       );
-                    })
+                    }),
                   ],
                 ),
                 const SizedBox(height: 120),

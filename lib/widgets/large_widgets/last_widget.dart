@@ -4,7 +4,7 @@ import 'package:portfolio/widgets/large_widgets/field_widget.dart';
 import 'package:portfolio/widgets/large_widgets/hover_text.dart';
 
 class LastWidget extends StatelessWidget {
-  const LastWidget({Key key}) : super(key: key);
+  const LastWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -2,7 +2,7 @@ import 'package:portfolio/core/utils/exports.dart';
 import 'package:portfolio/widgets/large_widgets/tab_widget.dart';
 
 class FifthWidget extends StatelessWidget {
-  const FifthWidget({Key key}) : super(key: key);
+  const FifthWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

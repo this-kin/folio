@@ -1,11 +1,11 @@
 import 'package:portfolio/core/utils/exports.dart';
 
 class RoundButton extends StatelessWidget {
-  final Widget icon;
-  final VoidCallback onPressed;
+  final Widget? icon;
+  final VoidCallback? onPressed;
 
   const RoundButton({
-    Key key,
+    Key? key,
     this.icon,
     this.onPressed,
   }) : super(key: key);
@@ -27,12 +27,12 @@ class RoundButton extends StatelessWidget {
 }
 
 class SocialButton extends StatelessWidget {
-  final String icon;
-  final VoidCallback onPressed;
-  final String title;
+  final String? icon;
+  final VoidCallback? onPressed;
+  final String? title;
 
   const SocialButton({
-    Key key,
+    Key? key,
     this.icon,
     this.onPressed,
     this.title,
@@ -49,13 +49,13 @@ class SocialButton extends StatelessWidget {
           child: Row(
             children: [
               SvgPicture.asset(
-                icon,
+                icon!,
                 height: 20,
                 width: 20,
               ),
               const SizedBox(width: 12),
               Text(
-                title,
+                title!,
                 style: CustomTheme.mediumText(context).copyWith(
                   color: const Color(0xff9F9FA9),
                   fontWeight: FontWeight.w700,
@@ -71,9 +71,9 @@ class SocialButton extends StatelessWidget {
 }
 
 class ScrollButton extends StatelessWidget {
-  final VoidCallback onPressed;
+  final VoidCallback? onPressed;
   const ScrollButton({
-    Key key,
+    Key? key,
     this.onPressed,
   }) : super(key: key);
 
@@ -114,12 +114,12 @@ class ScrollButton extends StatelessWidget {
 }
 
 class CustomTextButton extends StatelessWidget {
-  final VoidCallback onPressed;
-  final dynamic icon;
-  final String text;
+  final VoidCallback? onPressed;
+  final String? icon;
+  final String? text;
 
   const CustomTextButton({
-    Key key,
+    Key? key,
     this.onPressed,
     this.icon,
     this.text,
@@ -135,7 +135,7 @@ class CustomTextButton extends StatelessWidget {
         children: [
           //    const SizedBox(width: 100),
           SvgPicture.asset(
-            icon,
+            icon!,
             fit: BoxFit.scaleDown,
             color: purpleColor,
           ),
@@ -143,7 +143,7 @@ class CustomTextButton extends StatelessWidget {
           Flexible(
             fit: FlexFit.tight,
             child: Text(
-              text,
+              text!,
               style: const TextStyle(
                 fontSize: 17,
                 color: blackColor,
@@ -158,7 +158,7 @@ class CustomTextButton extends StatelessWidget {
 }
 
 class CustomAnimatedButton extends StatefulWidget {
-  const CustomAnimatedButton({Key key}) : super(key: key);
+  const CustomAnimatedButton({Key? key}) : super(key: key);
 
   @override
   State<CustomAnimatedButton> createState() => _CustomAnimatedButtonState();
@@ -172,11 +172,11 @@ class _CustomAnimatedButtonState extends State<CustomAnimatedButton> {
 }
 
 class NavigatorButton extends StatelessWidget {
-  final String icon;
-  final VoidCallback onPressed;
+  final String? icon;
+  final VoidCallback? onPressed;
 
   const NavigatorButton({
-    Key key,
+    Key? key,
     this.icon,
     this.onPressed,
   }) : super(key: key);
@@ -190,7 +190,7 @@ class NavigatorButton extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: SvgPicture.asset(
-            icon,
+            icon!,
             width: 40,
             color: darkGreyColor,
           ),

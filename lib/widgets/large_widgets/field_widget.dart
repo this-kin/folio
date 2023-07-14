@@ -2,14 +2,14 @@ import 'package:portfolio/core/utils/exports.dart';
 import 'package:portfolio/widgets/border_widget.dart';
 
 class CustomField extends StatelessWidget {
-  final String icon;
-  final String title;
-  final TextEditingController controller;
-  final TextInputType textInputType;
-  final bool isMessage;
+  final String? icon;
+  final String? title;
+  final TextEditingController? controller;
+  final TextInputType? textInputType;
+  final bool? isMessage;
 
   const CustomField({
-    Key key,
+    Key? key,
     this.icon,
     this.title,
     this.controller,
@@ -20,7 +20,7 @@ class CustomField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: isMessage ? 250 : 100,
+      height: isMessage! ? 250 : 100,
       width: 400,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
@@ -31,7 +31,7 @@ class CustomField extends StatelessWidget {
         ),
         controller: controller,
         keyboardType: textInputType,
-        maxLines: isMessage ? 5 : 1,
+        maxLines: isMessage! ? 5 : 1,
         decoration: InputDecoration(
           fillColor: greyColor.withOpacity(0.1),
           filled: true,
@@ -40,7 +40,7 @@ class CustomField extends StatelessWidget {
           focusedBorder: focusBorder(),
           enabledBorder: primaryBorder(),
           suffixIcon: SvgPicture.asset(
-            icon,
+            icon!,
             fit: BoxFit.scaleDown,
             color: blackColor,
           ),

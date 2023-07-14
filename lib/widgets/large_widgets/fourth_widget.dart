@@ -1,7 +1,7 @@
 import 'package:portfolio/core/utils/exports.dart';
 
 class FourthWidget extends StatelessWidget {
-  const FourthWidget({Key key}) : super(key: key);
+  const FourthWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

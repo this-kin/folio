@@ -3,7 +3,7 @@ import 'package:portfolio/data/models/specialization_model.dart';
 import 'package:portfolio/widgets/custom_button.dart';
 
 class ThirdWidget extends StatelessWidget {
-  const ThirdWidget({Key key}) : super(key: key);
+  const ThirdWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -58,7 +58,7 @@ class ThirdWidget extends StatelessWidget {
                               child: Padding(
                                 padding: const EdgeInsets.all(30),
                                 child: Image.asset(
-                                  snapshot.image,
+                                  snapshot.image!,
                                   height: 200,
                                   width: 200,
                                 ),
@@ -67,7 +67,7 @@ class ThirdWidget extends StatelessWidget {
                           ),
                           const SizedBox(height: 40),
                           Text(
-                            snapshot.title,
+                            snapshot.title!,
                             textAlign: TextAlign.center,
                             style: CustomTheme.semiLargeText(context).copyWith(
                               color: blackColor,
@@ -77,7 +77,7 @@ class ThirdWidget extends StatelessWidget {
                           ),
                           const SizedBox(height: 30),
                           Text(
-                            snapshot.description,
+                            snapshot.description!,
                             textAlign: TextAlign.center,
                             style: CustomTheme.mediumText(context).copyWith(
                               color: greyTextColor,

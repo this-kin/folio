@@ -1,7 +1,7 @@
 import 'package:portfolio/core/utils/exports.dart';
 
 class SmallBackgroundPattern extends StatelessWidget {
-  const SmallBackgroundPattern({Key key}) : super(key: key);
+  const SmallBackgroundPattern({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

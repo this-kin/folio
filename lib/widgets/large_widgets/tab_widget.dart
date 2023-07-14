@@ -2,7 +2,7 @@ import 'package:portfolio/core/utils/exports.dart';
 import 'package:portfolio/widgets/large_widgets/tab_view.dart';
 
 class TabWidget extends StatefulWidget {
-  const TabWidget({Key key}) : super(key: key);
+  const TabWidget({Key? key}) : super(key: key);
 
   @override
   State<TabWidget> createState() => _TabWidgetState();

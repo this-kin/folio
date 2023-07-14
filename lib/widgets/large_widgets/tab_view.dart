@@ -2,7 +2,7 @@ import 'package:portfolio/core/utils/exports.dart';
 import 'package:portfolio/data/models/case_model.dart';
 
 class TabView extends StatelessWidget {
-  const TabView({Key key}) : super(key: key);
+  const TabView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -49,7 +49,7 @@ class TabView extends StatelessWidget {
                           top: Radius.circular(20),
                         ),
                         image: DecorationImage(
-                          image: AssetImage(snap.image),
+                          image: AssetImage(snap.image!),
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -59,7 +59,7 @@ class TabView extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(left: 40),
                     child: Text(
-                      snap.title,
+                      snap.title!,
                       style: CustomTheme.semiLargeText(context).copyWith(
                         fontWeight: FontWeight.bold,
                         fontSize: 25,
@@ -70,7 +70,7 @@ class TabView extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(left: 40),
                     child: Text(
-                      snap.description,
+                      snap.description!,
                       style: CustomTheme.mediumText(context).copyWith(
                         fontWeight: FontWeight.w500,
                         color: greyTextColor,

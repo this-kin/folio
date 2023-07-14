@@ -1,10 +1,10 @@
 import 'package:portfolio/core/utils/exports.dart';
 
 class kTextButton extends StatelessWidget {
-  final String text;
-  final VoidCallback onPressed;
+  final String? text;
+  final VoidCallback? onPressed;
   const kTextButton({
-    Key key,
+    Key? key,
     this.onPressed,
     this.text,
   }) : super(key: key);
@@ -18,7 +18,7 @@ class kTextButton extends StatelessWidget {
           //
         },
         child: Text(
-          text,
+          text!,
           style: CustomTheme.semiLargeText(context).copyWith(
             color: backgroundColor,
           ),

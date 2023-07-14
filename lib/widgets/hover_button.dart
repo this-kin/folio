@@ -1,9 +1,9 @@
 import 'package:portfolio/core/utils/exports.dart';
 
 class OnHoverButton extends StatefulWidget {
-  final Widget child;
+  final Widget? child;
   const OnHoverButton({
-    Key key,
+    Key? key,
     this.child,
   }) : super(key: key);
 

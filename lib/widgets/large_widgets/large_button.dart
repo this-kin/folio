@@ -1,10 +1,10 @@
 import 'package:portfolio/core/utils/exports.dart';
 
 class ContactButton extends StatelessWidget {
-  final String text;
-  final VoidCallback onPressed;
+  final String? text;
+  final VoidCallback? onPressed;
   const ContactButton({
-    Key key,
+    Key? key,
     this.text,
     this.onPressed,
   }) : super(key: key);
@@ -26,7 +26,7 @@ class ContactButton extends StatelessWidget {
             child: Row(
               children: [
                 Text(
-                  text,
+                  text!,
                   style: CustomTheme.mediumText(context).copyWith(
                     color: backgroundColor,
                   ),
