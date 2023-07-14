@@ -1,10 +1,8 @@
-import 'package:firebase_core/firebase_core.dart';
-import 'package:portfolio/core/utils/exports.dart';
+import 'package:portfolio/core/utilities/exports.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
-  runApp(const MyApp());
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 class MyApp extends ConsumerWidget {
@@ -18,6 +16,7 @@ class MyApp extends ConsumerWidget {
       themeMode: ThemeMode.light,
       debugShowCheckedModeBanner: false,
       theme: CustomTheme.getTheme(context),
+      routerDelegate: router.routerDelegate,
       routeInformationParser: router.routeInformationParser,
       routeInformationProvider: router.routeInformationProvider,
     );

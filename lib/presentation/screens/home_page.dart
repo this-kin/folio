@@ -1,4 +1,4 @@
-import 'package:portfolio/core/utils/exports.dart';
+import 'package:portfolio/core/utilities/exports.dart';
 import 'package:portfolio/presentation/screens/contact_widget.dart';
 import 'package:portfolio/presentation/screens/introduction.dart';
 import 'package:portfolio/presentation/widgets/large_widgets/fifth_widget.dart';

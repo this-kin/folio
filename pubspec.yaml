@@ -40,6 +40,7 @@ dependencies:
   url_launcher: 
   flutter_riverpod:
   firebase_core: ^2.4.1
+  adaptive_breakpoints:
   
 
 dev_dependencies:

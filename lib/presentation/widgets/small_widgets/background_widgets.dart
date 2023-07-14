@@ -1,4 +1,4 @@
-import 'package:portfolio/core/utils/exports.dart';
+import 'package:portfolio/core/utilities/exports.dart';
 
 class SmallBackgroundPattern extends StatelessWidget {
   const SmallBackgroundPattern({Key? key}) : super(key: key);

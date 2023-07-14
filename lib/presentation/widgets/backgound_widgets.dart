@@ -1,4 +1,4 @@
-import 'package:portfolio/core/utils/exports.dart';
+import 'package:portfolio/core/utilities/exports.dart';
 
 class AppDrawerPattern extends StatelessWidget {
   const AppDrawerPattern({Key? key}) : super(key: key);
