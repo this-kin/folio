@@ -49,7 +49,7 @@ class _NameWidgetState extends State<NameWidget>
                       fit: BoxFit.scaleDown,
                     ),
                     const SizedBox(width: 50),
-                    if (!ResponsiveWidget.isMobile(context))
+                    if (!ResponsiveWidget.isSmall(context))
                       SocialButton(
                         icon: ConstanceData.dribble,
                         title: 'Dribble',

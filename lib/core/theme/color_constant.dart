@@ -13,6 +13,6 @@ const Color greyColor = Color(0xffC5C5C5);
 const Color transparency = Colors.transparent;
 const Color darkBlueColor = Color(0xff1A1D88);
 const Color darkGreyColor = Color(0xffC1C5C5);
-
+const Color darkPurpleColor = Color(0xff1B1B87);
 // text colors
 const Color greyTextColor = Color(0xff6B6B6B);
