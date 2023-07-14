@@ -1,24 +1,28 @@
 import 'package:portfolio/core/utils/exports.dart';
 
-class AppController extends GetxController {
-  /// instance variable of app controller
-  static AppController instance = Get.put(AppController());
+// dependency injection
+final appProvider =
+    ChangeNotifierProvider<AppController>((ref) => AppController());
 
-  /// a global key generic type scaffold state
-  final globalKey = GlobalKey<ScaffoldState>().obs;
-
+class AppController extends ChangeNotifier {
   ///
-  Rx<bool> isOpen = Rx<bool>(false);
+  /// a global key generic type scaffold state
+  final globalKey = GlobalKey<ScaffoldState>();
+
+  /// checks the state of drawer
+  bool isOpen = false;
 
   // close drawer
   void closeDrawer() {
-    isOpen.value = false;
-    globalKey.value.currentState.closeDrawer();
+    isOpen = false;
+    globalKey.currentState!.closeDrawer();
+    notifyListeners();
   }
 
   // open drawer
   void openDrawer() {
-    isOpen.value = true;
-    globalKey.value.currentState.openDrawer();
+    isOpen = true;
+    globalKey.currentState!.openDrawer();
+    notifyListeners();
   }
 }

@@ -1,9 +1,9 @@
 import 'package:portfolio/core/constants/image_constants.dart';
 
 class Case {
-  final String image;
-  final String title;
-  final String description;
+  final String? image;
+  final String? title;
+  final String? description;
 
   Case({
     this.image,

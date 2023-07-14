@@ -1,10 +1,10 @@
 import 'package:portfolio/core/utils/exports.dart';
 
 class Specialization {
-  final String image;
-  final String title;
-  final String description;
-  final Color color;
+  final String? image;
+  final String? title;
+  final String? description;
+  final Color? color;
 
   Specialization({
     this.image,

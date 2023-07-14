@@ -22,7 +22,7 @@ class RouterNotifier extends ChangeNotifier {
     GoRoute(
       path: RouteGenerator.home,
       name: RouteGenerator.home,
-      builder: (_, state) => const Home(),
+      builder: (_, state) => Home(),
     )
   ];
 }
