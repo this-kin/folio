@@ -1,5 +1,6 @@
 import 'package:portfolio/core/routes/route_generator.dart';
 import 'package:portfolio/core/utils/exports.dart';
+import 'package:portfolio/presentation/screens/home_page.dart';
 
 final routerProvider = Provider<GoRouter>((ref) {
   final router = RouterNotifier(ref);

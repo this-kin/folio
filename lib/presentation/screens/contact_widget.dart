@@ -1,6 +1,6 @@
 import 'package:portfolio/core/constants/app_constant.dart';
 import 'package:portfolio/core/utils/exports.dart';
-import 'package:portfolio/widgets/large_widgets/large_button.dart';
+import 'package:portfolio/presentation/widgets/large_widgets/large_button.dart';
 
 class ContactWidget extends StatefulWidget {
   const ContactWidget({Key? key}) : super(key: key);

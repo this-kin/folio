@@ -1,6 +1,6 @@
 import 'package:portfolio/core/utils/exports.dart';
 import 'package:portfolio/data/models/specialization_model.dart';
-import 'package:portfolio/widgets/custom_button.dart';
+import 'package:portfolio/presentation/widgets/custom_button.dart';
 
 class ThirdWidget extends StatelessWidget {
   const ThirdWidget({Key? key}) : super(key: key);

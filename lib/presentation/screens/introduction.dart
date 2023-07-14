@@ -1,6 +1,6 @@
 import 'package:portfolio/core/constants/app_constant.dart';
 import 'package:portfolio/core/utils/exports.dart';
-import 'package:portfolio/widgets/custom_button.dart';
+import 'package:portfolio/presentation/widgets/custom_button.dart';
 
 class NameWidget extends StatefulWidget {
   const NameWidget({Key? key}) : super(key: key);

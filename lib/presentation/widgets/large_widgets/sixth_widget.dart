@@ -1,5 +1,5 @@
 import 'package:portfolio/core/utils/exports.dart';
-import 'package:portfolio/widgets/custom_button.dart';
+import 'package:portfolio/presentation/widgets/custom_button.dart';
 
 class SixthWidget extends StatelessWidget {
   const SixthWidget({Key? key}) : super(key: key);

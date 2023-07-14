@@ -1,7 +1,7 @@
 import 'package:portfolio/core/utils/exports.dart';
-import 'package:portfolio/widgets/custom_button.dart';
-import 'package:portfolio/widgets/large_widgets/field_widget.dart';
-import 'package:portfolio/widgets/large_widgets/hover_text.dart';
+import 'package:portfolio/presentation/widgets/custom_button.dart';
+import 'package:portfolio/presentation/widgets/large_widgets/field_widget.dart';
+import 'package:portfolio/presentation/widgets/large_widgets/hover_text.dart';
 
 class LastWidget extends StatelessWidget {
   const LastWidget({Key? key}) : super(key: key);

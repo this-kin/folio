@@ -1,5 +1,5 @@
 import 'package:portfolio/core/utils/exports.dart';
-import 'package:portfolio/widgets/large_widgets/tab_widget.dart';
+import 'package:portfolio/presentation/widgets/large_widgets/tab_widget.dart';
 
 class FifthWidget extends StatelessWidget {
   const FifthWidget({Key? key}) : super(key: key);

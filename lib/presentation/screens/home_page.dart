@@ -1,14 +1,14 @@
 import 'package:portfolio/core/utils/exports.dart';
-import 'package:portfolio/modules/contact_widget.dart';
-import 'package:portfolio/modules/introduction.dart';
-import 'package:portfolio/widgets/large_widgets/fifth_widget.dart';
-import 'package:portfolio/widgets/large_widgets/fourth_widget.dart';
-import 'package:portfolio/widgets/large_widgets/large_background.dart';
-import 'package:portfolio/widgets/large_widgets/large_drawer.dart';
-import 'package:portfolio/widgets/large_widgets/last_widget.dart';
-import 'package:portfolio/widgets/large_widgets/sixth_widget.dart';
-import 'package:portfolio/widgets/large_widgets/third_widget.dart';
-import 'package:portfolio/widgets/small_widgets/background_widgets.dart';
+import 'package:portfolio/presentation/screens/contact_widget.dart';
+import 'package:portfolio/presentation/screens/introduction.dart';
+import 'package:portfolio/presentation/widgets/large_widgets/fifth_widget.dart';
+import 'package:portfolio/presentation/widgets/large_widgets/fourth_widget.dart';
+import 'package:portfolio/presentation/widgets/large_widgets/large_background.dart';
+import 'package:portfolio/presentation/widgets/large_widgets/large_drawer.dart';
+import 'package:portfolio/presentation/widgets/large_widgets/last_widget.dart';
+import 'package:portfolio/presentation/widgets/large_widgets/sixth_widget.dart';
+import 'package:portfolio/presentation/widgets/large_widgets/third_widget.dart';
+import 'package:portfolio/presentation/widgets/small_widgets/background_widgets.dart';
 
 class Home extends ConsumerStatefulWidget {
   const Home({Key? key}) : super(key: key);
