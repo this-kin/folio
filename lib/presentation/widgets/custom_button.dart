@@ -127,13 +127,12 @@ class CustomTextButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: 500,
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          //    const SizedBox(width: 100),
           SvgPicture.asset(
             icon!,
             fit: BoxFit.scaleDown,

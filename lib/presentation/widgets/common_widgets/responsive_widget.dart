@@ -17,12 +17,12 @@ class ResponsiveWidget extends StatelessWidget {
   static const double largeWidth = 1280;
 
   static bool isSmall(BuildContext context) {
-    return MediaQuery.of(context).size.width < smallWidth;
+    return MediaQuery.of(context).size.width <= smallWidth;
   }
 
   static bool isMedium(BuildContext context) {
     final double width = MediaQuery.of(context).size.width;
-    return width >= smallWidth && width < mediumWidth;
+    return width >= smallWidth && width <= mediumWidth;
   }
 
   static bool isLarge(BuildContext context) {

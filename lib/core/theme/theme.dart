@@ -7,12 +7,10 @@ class CustomTheme {
   static ThemeData getTheme(BuildContext context) => _themeData(context);
 
   static TextStyle largeText(BuildContext context) {
-    return Theme.of(context).textTheme.headline1!.copyWith(
-          fontSize: 55.0,
-          fontWeight: FontWeight.bold,
+    return Theme.of(context).textTheme.displayMedium!.copyWith(
           color: blackColor,
+          fontWeight: FontWeight.bold,
           fontFamily: GoogleFonts.poppins().fontFamily,
-          wordSpacing: 5.0,
         );
   }
 

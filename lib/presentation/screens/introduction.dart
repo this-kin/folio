@@ -1,5 +1,6 @@
-import 'package:portfolio/core/constants/app_constant.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/core/utilities/exports.dart';
+import 'package:portfolio/core/constants/app_constant.dart';
 import 'package:portfolio/presentation/widgets/custom_button.dart';
 
 class NameWidget extends StatefulWidget {
@@ -14,7 +15,7 @@ class _NameWidgetState extends State<NameWidget>
   //
   late AnimationController _controller;
   late Animation _animation;
-  final Tween<double> _opacityTween = Tween<double>(begin: 0.4, end: 0.9);
+  // final Tween<double> _opacityTween = Tween<double>(begin: 0.4, end: 0.9);
 
   @override
   void initState() {
@@ -107,7 +108,6 @@ class _NameWidgetState extends State<NameWidget>
                       "Jack Gross",
                       style: CustomTheme.mediumText(context).copyWith(
                         color: purpleColor,
-                        fontSize: 17,
                         fontWeight: FontWeight.w900,
                       ),
                     )
@@ -116,7 +116,9 @@ class _NameWidgetState extends State<NameWidget>
                 const SizedBox(height: 50),
                 Text(
                   "Hello, my\nname's Jack.\nI'm a Visual\nDesigner.",
-                  style: CustomTheme.largeText(context),
+                  style: GoogleFonts.poppins(
+                    fontSize: 50.0,
+                  ),
                 ),
                 const SizedBox(height: 150),
                 Padding(

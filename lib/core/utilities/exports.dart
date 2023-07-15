@@ -8,4 +8,4 @@ export 'package:flutter_riverpod/flutter_riverpod.dart';
 export 'package:portfolio/core/theme/color_constant.dart';
 export 'package:portfolio/data/controllers/app_controller.dart';
 export 'package:portfolio/core/constants/image_constants.dart';
-export 'package:portfolio/core/utilities/responsive_widget.dart';
+export 'package:portfolio/presentation/widgets/common_widgets/responsive_widget.dart';
