@@ -7,7 +7,7 @@ class CustomTheme {
   static ThemeData getTheme(BuildContext context) => _themeData(context);
 
   static TextStyle largeText(BuildContext context) {
-    return Theme.of(context).textTheme.displayMedium!.copyWith(
+    return Theme.of(context).textTheme.displayLarge!.copyWith(
           color: blackColor,
           fontWeight: FontWeight.bold,
           fontFamily: GoogleFonts.poppins().fontFamily,
@@ -15,7 +15,7 @@ class CustomTheme {
   }
 
   static TextStyle semiLargeText(BuildContext context) {
-    return Theme.of(context).textTheme.headline5!.copyWith(
+    return Theme.of(context).textTheme.displayLarge!.copyWith(
           fontSize: 17.0,
           fontWeight: FontWeight.w700,
           color: blackColor,
@@ -24,7 +24,7 @@ class CustomTheme {
   }
 
   static TextStyle mediumText(BuildContext context) {
-    return Theme.of(context).textTheme.headline5!.copyWith(
+    return Theme.of(context).textTheme.displayMedium!.copyWith(
           fontSize: 14.0,
           fontWeight: FontWeight.w700,
           color: blackColor,
@@ -33,7 +33,7 @@ class CustomTheme {
   }
 
   static TextStyle normalText(BuildContext context) {
-    return Theme.of(context).textTheme.headline5!.copyWith(
+    return Theme.of(context).textTheme.displaySmall!.copyWith(
           fontSize: 12.0,
           fontWeight: FontWeight.w500,
           color: blackColor,
@@ -42,7 +42,7 @@ class CustomTheme {
   }
 
   static TextStyle smallText(BuildContext context) {
-    return Theme.of(context).textTheme.headline5!.copyWith(
+    return Theme.of(context).textTheme.displaySmall!.copyWith(
           fontSize: 10.0,
           fontWeight: FontWeight.w300,
           color: blackColor,
@@ -51,7 +51,7 @@ class CustomTheme {
   }
 
   static TextStyle smallestText(BuildContext context) {
-    return Theme.of(context).textTheme.headline5!.copyWith(
+    return Theme.of(context).textTheme.displaySmall!.copyWith(
           fontSize: 8.0,
           fontWeight: FontWeight.w300,
           color: blackColor,
@@ -64,7 +64,6 @@ class CustomTheme {
       typography: Typography(),
       brightness: Brightness.light,
       visualDensity: VisualDensity.adaptivePlatformDensity,
-      backgroundColor: backgroundColor,
       scaffoldBackgroundColor: backgroundColor,
       textTheme:
           GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme).apply(

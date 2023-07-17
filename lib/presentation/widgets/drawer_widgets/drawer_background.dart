@@ -6,9 +6,9 @@ class DrawerBackground extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ResponsiveWidget(
-      desktop: _backgoundPattern(),
-      tablet: _backgoundPattern(),
-      mobile: SizedBox(
+      largeScreen: _backgoundPattern(),
+      mediumScreen: _backgoundPattern(),
+      smallScreen: SizedBox(
         height: 600,
         width: MediaQuery.of(context).size.width,
         child: CustomPaint(
