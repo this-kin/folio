@@ -1,6 +1,5 @@
-import 'package:portfolio/core/routes/route_generator.dart';
 import 'package:portfolio/core/shared/exports.dart';
-import 'package:portfolio/presentation/screens/home.dart';
+import 'package:portfolio/presentation/screens/home/home.dart';
 
 final routerProvider = Provider<GoRouter>((ref) {
   final router = RouterNotifier(ref);
@@ -9,21 +8,22 @@ final routerProvider = Provider<GoRouter>((ref) {
     routes: router.routes,
     refreshListenable: router,
     debugLogDiagnostics: true,
+    initialLocation: '/home',
   );
 });
 
 class RouterNotifier extends ChangeNotifier {
-  final Ref _ref;
+  final Ref ref;
 
-  RouterNotifier(this._ref);
+  RouterNotifier(this.ref);
 
   List<GoRoute> get routes => _routes;
 
   final List<GoRoute> _routes = [
     GoRoute(
-      path: RouteGenerator.home,
-      name: RouteGenerator.home,
-      builder: (_, state) => Home(),
+      path: '/home',
+      name: 'home',
+      builder: (_, state) => const Home(),
     )
   ];
 }
