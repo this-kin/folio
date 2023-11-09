@@ -1,5 +1,5 @@
 // app colors
-import 'package:portfolio/core/utilities/exports.dart';
+import 'package:portfolio/core/shared/exports.dart';
 
 const Color blackColor = Color(0xff111029);
 const Color blueColor = Color(0xff00113B);

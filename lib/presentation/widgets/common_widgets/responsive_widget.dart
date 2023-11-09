@@ -1,4 +1,4 @@
-import 'package:portfolio/core/utilities/exports.dart';
+import 'package:portfolio/core/shared/exports.dart';
 
 class ResponsiveWidget extends StatelessWidget {
   final Widget? smallScreen;

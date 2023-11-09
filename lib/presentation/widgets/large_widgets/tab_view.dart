@@ -1,4 +1,4 @@
-import 'package:portfolio/core/utilities/exports.dart';
+import 'package:portfolio/core/shared/exports.dart';
 import 'package:portfolio/data/models/case_model.dart';
 
 class TabView extends StatelessWidget {

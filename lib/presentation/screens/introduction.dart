@@ -1,5 +1,5 @@
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio/core/utilities/exports.dart';
+import 'package:portfolio/core/shared/exports.dart';
 import 'package:portfolio/core/constants/app_constant.dart';
 import 'package:portfolio/presentation/widgets/custom_button.dart';
 

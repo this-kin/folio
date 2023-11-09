@@ -1,4 +1,4 @@
-import 'package:portfolio/core/utilities/exports.dart';
+import 'package:portfolio/core/shared/exports.dart';
 import 'package:portfolio/presentation/widgets/large_widgets/tab_view.dart';
 
 class TabWidget extends StatefulWidget {

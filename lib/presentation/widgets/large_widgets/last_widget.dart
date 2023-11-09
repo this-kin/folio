@@ -1,4 +1,4 @@
-import 'package:portfolio/core/utilities/exports.dart';
+import 'package:portfolio/core/shared/exports.dart';
 import 'package:portfolio/presentation/widgets/custom_button.dart';
 import 'package:portfolio/presentation/widgets/large_widgets/field_widget.dart';
 import 'package:portfolio/presentation/widgets/large_widgets/hover_text.dart';

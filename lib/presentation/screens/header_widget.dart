@@ -1,4 +1,4 @@
-import 'package:portfolio/core/utilities/exports.dart';
+import 'package:portfolio/core/shared/exports.dart';
 import 'package:portfolio/presentation/widgets/header_widgets/large_header_background.dart';
 import 'package:portfolio/presentation/widgets/header_widgets/small_header_background.dart';
 

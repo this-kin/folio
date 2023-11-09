@@ -1,5 +1,5 @@
 import 'package:portfolio/core/routes/route_generator.dart';
-import 'package:portfolio/core/utilities/exports.dart';
+import 'package:portfolio/core/shared/exports.dart';
 import 'package:portfolio/presentation/screens/home.dart';
 
 final routerProvider = Provider<GoRouter>((ref) {
