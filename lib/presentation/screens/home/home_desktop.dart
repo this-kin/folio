@@ -8,10 +8,10 @@ class HomeDesktop extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final appController = ref.read(appProvider);
+    final app = ref.read(appProvider);
     return Scaffold(
       drawer: const CustomDrawer(),
-      key: appController.globalKey,
+      key: app.globalKey,
       body: Container(
         color: backgroundColor,
         child: ScrollerWidget(

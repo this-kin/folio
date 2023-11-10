@@ -1,6 +1,6 @@
 import 'package:portfolio/core/shared/exports.dart';
 
-extension BuildContextExt on BuildContext {
+extension BuildContextExtension on BuildContext {
   /// getter returns device screen height size (VERTICAL)
   double get height => MediaQuery.of(this).size.height;
 
