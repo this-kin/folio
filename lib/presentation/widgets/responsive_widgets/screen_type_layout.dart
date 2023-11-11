@@ -20,11 +20,11 @@ class ScreenTypeLayout extends StatelessWidget {
         case DeviceScreenType.mobile:
           return mobile!;
         case DeviceScreenType.tablet:
-          return tablet ?? mobile!;
+          return tablet ?? desktop!;
         case DeviceScreenType.desktop:
           return desktop!;
         default:
-          return desktop!;
+          return mobile!;
       }
     });
   }

@@ -5,6 +5,26 @@ class AppDrawerDesktop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      backgroundColor: backgroundColor,
+      body: Container(
+        color: backgroundColor,
+        child: Row(
+          children: [
+            Expanded(
+              child: Container(
+                color: darkBlueColor,
+              ),
+            ),
+            Expanded(
+              flex: 3,
+              child: Container(
+                color: backgroundColor,
+              ),
+            )
+          ],
+        ),
+      ),
+    );
   }
 }
