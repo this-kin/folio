@@ -33,11 +33,11 @@ dependencies:
   flutter:
     sdk: flutter
     
-  flutter_riverpod: null
-  flutter_svg: null
-  go_router: null
-  google_fonts: null
-  url_launcher: null
+  flutter_riverpod:
+  flutter_svg:
+  go_router: 
+  google_fonts: 
+  url_launcher: 
 
 dev_dependencies:
 
