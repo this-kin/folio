@@ -12,8 +12,8 @@ class CustomDrawer extends StatefulWidget {
 class _CustomDrawerState extends State<CustomDrawer>
     with SingleTickerProviderStateMixin {
   //
-  late Animation _animation;
-  late AnimationController _controller;
+  late final Animation _animation;
+  late final AnimationController _controller;
 
   @override
   void initState() {

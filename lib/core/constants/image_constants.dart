@@ -1,6 +1,6 @@
 // ignore_for_file: constant_identifier_names
 
-class ConstanceData {
+abstract class ConstanceData {
   // base urls
   static const String baseImageUrl = "assets/images/";
   static const String baseSvgUrl = "assets/svgs/";

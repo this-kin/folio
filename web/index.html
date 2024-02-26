@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!--
     If you are serving your web app in a path other than the root, change the
@@ -23,17 +24,136 @@
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="portfolio">
+  <meta name="apple-mobile-web-app-title" content="Folio">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-  <title>portfolio</title>
+  <title>Folio</title>
   <link rel="manifest" href="manifest.json">
+
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
+  <style>
+    body,
+    html {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(#cfcfcf, #fff)
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+  <style>
+    .MuiCircularProgress-root {
+      display: inline-block
+    }
+
+    .MuiCircularProgress-static {
+      transition: transform .3s cubic-bezier(.4, 0, .2, 1) 0s
+    }
+
+    .MuiCircularProgress-indeterminate {
+      animation: MuiCircularProgress-keyframes-circular-rotate 1.4s linear infinite
+    }
+
+    .MuiCircularProgress-determinate {
+      transition: transform .3s cubic-bezier(.4, 0, .2, 1) 0s
+    }
+
+    .MuiCircularProgress-colorPrimary {
+      color: #3f51b5
+    }
+
+    .MuiCircularProgress-colorSecondary {
+      color: #f50057
+    }
+
+    .MuiCircularProgress-svg {
+      display: block;
+      animation: loading_animation 1.4s infinite
+    }
+
+    .MuiCircularProgress-circle {
+      stroke: currentColor
+    }
+
+    .MuiCircularProgress-circleStatic {
+      transition: stroke-dashoffset .3s cubic-bezier(.4, 0, .2, 1) 0s
+    }
+
+    .MuiCircularProgress-circleIndeterminate {
+      animation: MuiCircularProgress-keyframes-circular-dash 1.4s ease-in-out infinite;
+      stroke-dasharray: 80px, 200px;
+      stroke-dashoffset: 0
+    }
+
+    .MuiCircularProgress-circleDeterminate {
+      transition: stroke-dashoffset .3s cubic-bezier(.4, 0, .2, 1) 0s
+    }
+
+    @keyframes MuiCircularProgress-keyframes-circular-rotate {
+      0% {
+        transform-origin: 50% 50%
+      }
+
+      100% {
+        transform: rotate(360deg)
+      }
+    }
+
+    @keyframes MuiCircularProgress-keyframes-circular-dash {
+      0% {
+        stroke-dasharray: 1px, 200px;
+        stroke-dashoffset: 0
+      }
+
+      50% {
+        stroke-dasharray: 100px, 200px;
+        stroke-dashoffset: -15px
+      }
+
+      100% {
+        stroke-dasharray: 100px, 200px;
+        stroke-dashoffset: -125px
+      }
+    }
+
+    .MuiCircularProgress-circleDisableShrink {
+      animation: none
+    }
+
+    @keyframes loading_animation {
+      0% {
+        color: #4285f4
+      }
+
+      25% {
+        color: #ea4335
+      }
+
+      50% {
+        color: #f9bb2d
+      }
+
+      75% {
+        color: #34a853
+      }
+    }
+  </style>
 </head>
-<body>
+<body style="overflow: hidden">
+  <div id="loading-indicator" style="width: 60px; height: 60px;" role="progressbar" class="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"><svg viewBox="22 22 44 44" class="MuiCircularProgress-svg"> <circle cx="44" cy="44" r="20.2" fill="none" stroke-width="3.6" class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"></circle></svg></div>
+ 
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
+
     var serviceWorkerVersion = null;
     var scriptLoaded = false;
     function loadMainDartJs() {
@@ -97,5 +217,21 @@
       loadMainDartJs();
     }
   </script>
+
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js"></script>
+<script type='module'>
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAzTxi7oGgTAlP4KmioPMugjxgDNxZWQOE",
+    authDomain: "ecampus-molten.firebaseapp.com",
+    projectId: "ecampus-molten",
+    storageBucket: "ecampus-molten.appspot.com",
+    messagingSenderId: "965654624009",
+    appId: "1:965654624009:web:b2d8189a9ee16fc5cc05d8",
+    measurementId: "G-WMMGXPD0DK"
+  };
+  </script>
 </body>
+
 </html>

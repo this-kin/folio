@@ -1,6 +1,6 @@
-// break points
-import 'package:portfolio/core/shared/exports.dart';
 
+import 'package:portfolio/core/shared/exports.dart';
+// break points
 const int largeScreenSize = 1366;
 const int customScreenSize = 1100;
 const int mediumScreenSize = 768;
